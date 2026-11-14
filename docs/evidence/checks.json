@@ -1,0 +1,161 @@
+[
+  {
+    "name": "analyze",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\flutter.BAT",
+      "analyze"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa",
+    "exitCode": 0,
+    "seconds": 11.838,
+    "log": "docs/evidence/test_analyze.log"
+  },
+  {
+    "name": "architecture",
+    "command": [
+      "C:\\Users\\PG-GAMER\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+      "tools/check_architecture.py"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa",
+    "exitCode": 0,
+    "seconds": 0.084,
+    "log": "docs/evidence/test_architecture.log"
+  },
+  {
+    "name": "field_core",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\dart.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\packages\\field_core",
+    "exitCode": 0,
+    "seconds": 3.729,
+    "log": "docs/evidence/test_field_core.log"
+  },
+  {
+    "name": "field_nasa",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\dart.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\packages\\field_nasa",
+    "exitCode": 0,
+    "seconds": 3.669,
+    "log": "docs/evidence/test_field_nasa.log"
+  },
+  {
+    "name": "field_imagery",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\dart.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\packages\\field_imagery",
+    "exitCode": 0,
+    "seconds": 3.487,
+    "log": "docs/evidence/test_field_imagery.log"
+  },
+  {
+    "name": "field_storage",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\dart.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\packages\\field_storage",
+    "exitCode": 0,
+    "seconds": 3.278,
+    "log": "docs/evidence/test_field_storage.log"
+  },
+  {
+    "name": "field_compute",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\dart.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\packages\\field_compute",
+    "exitCode": 0,
+    "seconds": 3.92,
+    "log": "docs/evidence/test_field_compute.log"
+  },
+  {
+    "name": "field_maps",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\flutter.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\packages\\field_maps",
+    "exitCode": 0,
+    "seconds": 13.856,
+    "log": "docs/evidence/test_field_maps.log"
+  },
+  {
+    "name": "app_widgets",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\flutter.BAT",
+      "test"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\apps\\field_shift",
+    "exitCode": 0,
+    "seconds": 8.057,
+    "log": "docs/evidence/test_app_widgets.log"
+  },
+  {
+    "name": "raster_unit",
+    "command": [
+      "C:\\Users\\PG-GAMER\\Documents\\nasa\\.venv\\Scripts\\python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "packages/field_compute/worker",
+      "-p",
+      "test_raster.py",
+      "-v"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa",
+    "exitCode": 0,
+    "seconds": 0.899,
+    "log": "docs/evidence/test_raster_unit.log"
+  },
+  {
+    "name": "windows_integration",
+    "command": [
+      "cmd.exe",
+      "/d",
+      "/c",
+      "C:\\src\\flutter\\bin\\flutter.BAT",
+      "test",
+      "integration_test/windows_flow_test.dart",
+      "-d",
+      "windows",
+      "--dart-define=REPO_ROOT=C:/Users/PG-GAMER/Documents/nasa"
+    ],
+    "cwd": "C:\\Users\\PG-GAMER\\Documents\\nasa\\apps\\field_shift",
+    "exitCode": 0,
+    "seconds": 45.976,
+    "log": "docs/evidence/test_windows_integration.log"
+  }
+]

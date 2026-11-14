@@ -1,0 +1,212 @@
+[
+  {
+    "provider": "sentinel",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "variable": "rgb",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 729,
+      "totalPixels": 729,
+      "validPercent": 100.0,
+      "mean": 0.11736707295072668,
+      "min": -0.002850005403161049,
+      "max": 0.25129997730255127,
+      "median": 0.1168999895453453,
+      "stdDev": 0.03497356425598985,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.010535900015383959,
+    "result": "sentinel_rgb_0_verified.json"
+  },
+  {
+    "provider": "sentinel",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "variable": "falseColor",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 729,
+      "totalPixels": 729,
+      "validPercent": 100.0,
+      "mean": 0.1441402905844203,
+      "min": 0.005799995735287666,
+      "max": 0.23989999294281006,
+      "median": 0.14504998922348022,
+      "stdDev": 0.02705440910975426,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.015712000022176653,
+    "result": "sentinel_falseColor_0_verified.json"
+  },
+  {
+    "provider": "sentinel",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "variable": "swir",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 729,
+      "totalPixels": 729,
+      "validPercent": 100.0,
+      "mean": 0.21664389350613775,
+      "min": 0.08410000056028366,
+      "max": 0.2953000068664551,
+      "median": 0.2125999927520752,
+      "stdDev": 0.032854212548867175,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.009516100049950182,
+    "result": "sentinel_swir_0_verified.json"
+  },
+  {
+    "provider": "sentinel",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "variable": "red",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 729,
+      "totalPixels": 729,
+      "validPercent": 100.0,
+      "mean": 0.11736707295072668,
+      "min": -0.002850005403161049,
+      "max": 0.25129997730255127,
+      "median": 0.1168999895453453,
+      "stdDev": 0.03497356425598985,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.009654800000134856,
+    "result": "sentinel_red_0_verified.json"
+  },
+  {
+    "provider": "sentinel",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "variable": "ndvi",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 727,
+      "totalPixels": 729,
+      "validPercent": 99.72565157750343,
+      "mean": 0.11759185087271394,
+      "min": -0.03512577340006828,
+      "max": 0.9717036485671997,
+      "median": 0.07852645963430405,
+      "stdDev": 0.11374837828297567,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.009356599999591708,
+    "result": "sentinel_ndvi_0_verified.json"
+  },
+  {
+    "provider": "sentinel",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "variable": "ndmi",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 729,
+      "totalPixels": 729,
+      "validPercent": 100.0,
+      "mean": -0.2044374308413449,
+      "min": -0.8709678649902344,
+      "max": 0.005807755049318075,
+      "median": -0.20461581647396088,
+      "stdDev": 0.06874948569440037,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.009172899997793138,
+    "result": "sentinel_ndmi_0_verified.json"
+  },
+  {
+    "provider": "sentinel",
+    "scene": "S2B_18LUK_20250213_0_L2A",
+    "variable": "ndvi",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 727,
+      "totalPixels": 729,
+      "validPercent": 99.72565157750343,
+      "mean": 0.15131016890614446,
+      "min": -0.01899981126189232,
+      "max": 0.6747405529022217,
+      "median": 0.13237927854061127,
+      "stdDev": 0.09965403415004519,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 0
+    },
+    "seconds": 0.009378399990964681,
+    "result": "sentinel_ndvi_1_verified.json"
+  },
+  {
+    "provider": "landsat",
+    "scene": "LC09_L2SP_006070_20250226_02_T1",
+    "variable": "ndvi",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 178,
+      "totalPixels": 342,
+      "validPercent": 52.046783625730995,
+      "mean": 0.1353086739192518,
+      "min": 0.08816573768854141,
+      "max": 0.23996193706989288,
+      "median": 0.12601403892040253,
+      "stdDev": 0.037364295341213945,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 164
+    },
+    "seconds": 0.01046299998415634,
+    "result": "landsat_ndvi_0_verified.json"
+  },
+  {
+    "provider": "landsat",
+    "scene": "LC09_L2SP_006070_20250226_02_T1",
+    "variable": "ndmi",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 178,
+      "totalPixels": 342,
+      "validPercent": 52.046783625730995,
+      "mean": -0.07849597116262558,
+      "min": -0.1389065980911255,
+      "max": -0.013811132870614529,
+      "median": -0.0777917131781578,
+      "stdDev": 0.024683025848867605,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 164
+    },
+    "seconds": 0.008660499996040016,
+    "result": "landsat_ndmi_0_verified.json"
+  },
+  {
+    "provider": "landsat",
+    "scene": "LC09_L2SP_006070_20250226_02_T1",
+    "variable": "temperature",
+    "status": "PASS",
+    "statistics": {
+      "validPixels": 16,
+      "totalPixels": 36,
+      "validPercent": 44.44444444444444,
+      "mean": 48.44047927856445,
+      "min": 45.547760009765625,
+      "max": 50.864990234375,
+      "median": 48.67655944824219,
+      "stdDev": 1.7523315699941504,
+      "cloudPixels": 0,
+      "shadowPixels": 0,
+      "missingPixels": 20
+    },
+    "seconds": 6.457767300016712,
+    "result": "landsat_temperature_0_verified.json"
+  }
+]

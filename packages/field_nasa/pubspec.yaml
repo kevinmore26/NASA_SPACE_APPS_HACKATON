@@ -1,0 +1,13 @@
+name: field_nasa
+version: 1.0.0
+publish_to: none
+resolution: workspace
+environment:
+  sdk: ^3.13.1
+dependencies:
+  field_core: any
+  field_imagery: any
+  http: ^1.6.0
+dev_dependencies:
+  test: ^1.31.1
+  lints: ^6.0.0

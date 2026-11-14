@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "dependencies": {
+    "field_compute": [
+      "field_core",
+      "field_imagery"
+    ],
+    "field_core": [],
+    "field_imagery": [
+      "field_core"
+    ],
+    "field_maps": [
+      "field_core"
+    ],
+    "field_nasa": [
+      "field_core",
+      "field_imagery"
+    ],
+    "field_storage": [
+      "field_core"
+    ]
+  },
+  "errors": []
+}

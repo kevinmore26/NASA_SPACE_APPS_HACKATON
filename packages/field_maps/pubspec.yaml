@@ -1,0 +1,19 @@
+name: field_maps
+version: 1.0.0
+publish_to: none
+resolution: workspace
+environment:
+  sdk: ^3.13.1
+dependencies:
+  flutter:
+    sdk: flutter
+  field_core: any
+  flutter_map: ^8.3.2
+  latlong2: ^0.9.1
+  http: ^1.6.0
+dev_dependencies:
+  test: ^1.31.1
+  lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
