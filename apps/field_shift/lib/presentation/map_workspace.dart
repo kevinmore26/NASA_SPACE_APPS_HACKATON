@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 import '../application/field_controller.dart';
+import '../runtime/device_location.dart'
+    if (dart.library.js_interop) '../runtime/browser_location.dart'
+    as device;
 import 'analysis_page.dart';
 import 'field_strings.dart';
 import 'raster_preview.dart';
@@ -15,6 +18,7 @@ class MapWorkspace extends StatefulWidget {
   final http.Client tiles;
   final bool analyzing;
   final VoidCallback save, delete;
+  final Future<GeoPoint?> Function()? locateDevice;
   const MapWorkspace({
     super.key,
     required this.model,
@@ -22,6 +26,7 @@ class MapWorkspace extends StatefulWidget {
     required this.analyzing,
     required this.save,
     required this.delete,
+    this.locateDevice = device.requestLocation,
   });
 
   @override
@@ -36,6 +41,8 @@ class _MapWorkspaceState extends State<MapWorkspace> {
   String? _resultPath;
   Future<ImageProvider?>? _preview;
   bool _fitOnEntry = true;
+  bool _locating = false;
+  int _coordinateMoves = 0;
 
   static const _roads = MapTiles(
     template: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -53,7 +60,9 @@ class _MapWorkspaceState extends State<MapWorkspace> {
     try {
       final parts = _coordinates.text.trim().split(RegExp(r'[,;\s]+'));
       if (parts.length != 2) throw const FormatException();
-      _map.locate(GeoPoint(double.parse(parts[0]), double.parse(parts[1])));
+      final point = GeoPoint(double.parse(parts[0]), double.parse(parts[1]));
+      _coordinateMoves++;
+      _map.locate(point);
       m.feedback(context.t('Map centered.', 'Mapa centrado.'));
     } catch (_) {
       m.feedback(
@@ -64,6 +73,40 @@ class _MapWorkspaceState extends State<MapWorkspace> {
         error: true,
       );
     }
+  }
+
+  Future<void> _useDeviceLocation() async {
+    final locate = widget.locateDevice;
+    if (locate == null || _locating) return;
+    final draft = m.vertices;
+    final coordinateMoves = _coordinateMoves;
+    setState(() => _locating = true);
+    final position = await locate();
+    if (!mounted) return;
+    setState(() => _locating = false);
+    if (!m.editing ||
+        m.page != FieldPage.map ||
+        !identical(m.vertices, draft) ||
+        coordinateMoves != _coordinateMoves) {
+      return;
+    }
+    if (position == null) {
+      m.feedback(
+        context.t(
+          'Location unavailable. Move the map or enter coordinates to find your field.',
+          'Ubicación no disponible. Mueve el mapa o escribe coordenadas para encontrar tu terreno.',
+        ),
+        error: true,
+      );
+      return;
+    }
+    _map.locateAround(position, radiusMeters: 20000);
+    m.feedback(
+      context.t(
+        'Map centered near you. Zoom in to mark your field.',
+        'Mapa centrado cerca de ti. Acércate para marcar tu terreno.',
+      ),
+    );
   }
 
   void _fit() {
@@ -183,6 +226,26 @@ class _MapWorkspaceState extends State<MapWorkspace> {
           const SizedBox(height: 12),
         ],
         if (m.editing) ...[
+          if (parcel == null && widget.locateDevice != null) ...[
+            OutlinedButton.icon(
+              onPressed: _locating || m.isBusy ? null : _useDeviceLocation,
+              icon: _locating
+                  ? const SizedBox.square(
+                      dimension: 16,
+                      child: CircularProgressIndicator(strokeWidth: 2),
+                    )
+                  : const Icon(Icons.my_location_outlined),
+              label: Text(
+                _locating
+                    ? context.t(
+                        'Finding your location…',
+                        'Buscando tu ubicación…',
+                      )
+                    : context.t('Use my location', 'Usar mi ubicación'),
+              ),
+            ),
+            const SizedBox(height: 12),
+          ],
           Text(
             context.t('Draw the boundary', 'Marca los límites'),
             style: style,

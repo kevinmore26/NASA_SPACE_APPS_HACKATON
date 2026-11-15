@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:field_core/field_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -39,6 +41,24 @@ class FieldMapController {
       return;
     }
     _map.move(LatLng(p.latitude, p.longitude), zoom);
+  }
+
+  /// Centers the view with the requested local radius on its shortest axis.
+  void locateAround(GeoPoint p, {required double radiusMeters}) {
+    if (!radiusMeters.isFinite || radiusMeters <= 0) {
+      throw ArgumentError.value(radiusMeters, 'radiusMeters');
+    }
+    if (!_ready) {
+      _pendingMove = () => locateAround(p, radiusMeters: radiusMeters);
+      return;
+    }
+    final camera = _map.camera;
+    final mapSize = math.max(1.0, camera.nonRotatedSize.shortestSide);
+    final latitude = p.latitude * math.pi / 180;
+    final metersPerWorld =
+        2 * math.pi * SphericalMercator.r * math.cos(latitude);
+    final worldSize = mapSize * metersPerWorld / (2 * radiusMeters);
+    locate(p, zoom: camera.clampZoom(camera.crs.zoom(worldSize)));
   }
 
   void fit(GeoBounds b) {

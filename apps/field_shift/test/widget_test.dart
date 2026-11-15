@@ -3,6 +3,7 @@ import 'package:field_shift/application/field_language.dart';
 import 'package:field_maps/field_maps.dart';
 import 'package:field_shift/app.dart';
 import 'package:field_shift/application/field_controller.dart';
+import 'package:field_shift/presentation/map_workspace.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -47,7 +48,79 @@ Future<void> press(WidgetTester tester, String label) async {
   await tester.pumpAndSettle();
 }
 
+Future<void> openLocationMap(
+  WidgetTester tester,
+  FieldController model,
+  Future<GeoPoint?> Function() position,
+) async {
+  final tiles = MockClient(
+    (_) async => http.Response('Unexpected network request', 500),
+  );
+  addTearDown(tiles.close);
+  addTearDown(model.dispose);
+  model.newParcel();
+  await tester.pumpWidget(
+    MaterialApp(
+      home: Scaffold(
+        body: ListenableBuilder(
+          listenable: model,
+          builder: (context, _) => MapWorkspace(
+            model: model,
+            tiles: tiles,
+            analyzing: false,
+            save: () {},
+            delete: () {},
+            locateDevice: position,
+          ),
+        ),
+      ),
+    ),
+  );
+  await tester.pumpAndSettle();
+}
+
 void main() {
+  testWidgets('location centers an empty draft within twenty kilometers', (
+    tester,
+  ) async {
+    final model = controller(MemoryStore());
+    var requests = 0;
+    await openLocationMap(tester, model, () async {
+      requests++;
+      return GeoPoint(-6.724, -79.777);
+    });
+    expect(requests, 0);
+    await press(tester, 'Use my location');
+    expect(requests, 1);
+    expect(find.textContaining('WGS84 -6.72400, -79.77700'), findsOneWidget);
+    expect(model.vertices, isEmpty);
+
+    final map = tester.getRect(find.byType(FieldMap));
+    await tester.tapAt(map.center + Offset(0, map.shortestSide / 4));
+    await tester.pump(const Duration(milliseconds: 420));
+    final delta = (model.vertices.single.latitude + 6.724).abs();
+    expect(delta * 111319.49, closeTo(10000, 250));
+    await tester.pumpWidget(const SizedBox.shrink());
+  });
+
+  testWidgets('location denial leaves the manual coordinates available', (
+    tester,
+  ) async {
+    final model = controller(MemoryStore());
+    await openLocationMap(tester, model, () async => null);
+    await press(tester, 'Use my location');
+    expect(model.message, startsWith('Location unavailable.'));
+    expect(model.editing, isTrue);
+    await press(tester, 'Go to coordinates');
+    final field = find.byKey(const PageStorageKey('map-coordinates-input'));
+    await tester.ensureVisible(field);
+    await tester.enterText(field, '-12.050, -77.030');
+    await press(tester, 'Center on this location');
+    expect(find.textContaining('WGS84 -12.05000, -77.03000'), findsOneWidget);
+    expect(model.vertices, isEmpty);
+    await tester.pumpWidget(const SizedBox.shrink());
+  });
+
   testWidgets('draw, save and navigate through a compact window', (
     tester,
   ) async {
