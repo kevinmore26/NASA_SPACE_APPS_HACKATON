@@ -44,10 +44,15 @@ void main() {
         FieldShiftApp(model: m, tiles: tiles, dataDirectory: directory.path),
       );
       await tester.pumpAndSettle();
-      await tester.enterText(find.byType(TextField).first, '-13.718, -76.148');
-      await tester.tap(find.text('Ir a estas coordenadas'));
+      m.goTo(FieldPage.map);
       await tester.pumpAndSettle();
-      await tester.tap(find.text('2. Marcar mi terreno'));
+      await tester.tap(find.text('Go to coordinates'));
+      await tester.pumpAndSettle();
+      await tester.enterText(find.byType(TextField).first, '-13.718, -76.148');
+      await tester.tap(find.text('Center on this location'));
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.text('Mark a field'));
+      await tester.tap(find.text('Mark a field'));
       await tester.pumpAndSettle();
       final rect = tester.getRect(find.byType(FieldMap));
       for (final delta in [
@@ -60,8 +65,8 @@ void main() {
         await tester.pump(const Duration(milliseconds: 450));
       }
       expect(m.vertices.length, 4);
-      await tester.ensureVisible(find.text('Guardar mi terreno'));
-      await tester.tap(find.text('Guardar mi terreno'));
+      await tester.ensureVisible(find.text('Save field'));
+      await tester.tap(find.text('Save field'));
       await tester.pumpAndSettle();
       await tester.enterText(
         find
@@ -72,7 +77,7 @@ void main() {
             .first,
         'Verificación Windows — no es terreno del usuario',
       );
-      await tester.tap(find.text('Guardar terreno'));
+      await tester.tap(find.text('Save information'));
       await tester.pumpAndSettle();
       expect(m.selected, isNotNull);
       expect((await store.listParcels()).length, 1);
@@ -117,12 +122,22 @@ void main() {
       m.comparison = result;
       m.emit();
       await tester.pumpAndSettle();
-      await tester.ensureVisible(find.text('Alternar fecha en el mapa'));
-      await tester.tap(find.text('Alternar fecha en el mapa'));
+      await tester.ensureVisible(find.text('Switch image on map'));
+      await tester.tap(find.text('Switch image on map'));
       await tester.pumpAndSettle();
       expect(m.result!.id, result.id);
       await tiles.flush();
       expect(await tiles.directory.list().length, greaterThan(0));
+      await m.loadWeather();
+      expect(m.weather, isNotNull, reason: m.message);
+      expect(m.weather!.unitFor('PRECTOTCORR'), isNotEmpty);
+      m.viewObservations(weather: true);
+      await tester.pumpAndSettle();
+      await tester.ensureVisible(find.text('Daily records'));
+      await tester.tap(find.text('Daily records'));
+      await tester.pumpAndSettle();
+      expect(find.byType(DataTable), findsOneWidget);
+      expect(tester.takeException(), isNull);
       tiles.offline = true;
       m.offline = true;
       m.advanced = true;
@@ -143,6 +158,7 @@ void main() {
       await m.select(m.saved.single);
       expect(m.results.length, 2);
       expect(m.offline, true);
+      expect(m.weather!.days, isNotEmpty);
       m.result = m.results.first;
       m.navigate('Análisis');
       await tester.pumpWidget(

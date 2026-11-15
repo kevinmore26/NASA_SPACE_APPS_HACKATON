@@ -12,3 +12,4 @@ workspace:
   - packages/field_imagery
   - packages/field_storage
   - packages/field_compute
+  - packages/field_rotations

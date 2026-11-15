@@ -6,8 +6,8 @@ import 'package:field_imagery/field_imagery.dart';
 import 'package:field_nasa/field_nasa.dart';
 import 'package:http/http.dart' as http;
 
-Future<void> main() async {
-  final out = Directory('../../docs/evidence');
+Future<void> main(List<String> args) async {
+  final out = Directory(args.isEmpty ? '../../docs/evidence' : args.single);
   await out.create(recursive: true);
   final client = http.Client();
   final report = <String, dynamic>{

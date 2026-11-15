@@ -1,15 +1,27 @@
-# NASA Field Shift para Windows — 0.1.0
+# NASA Field Shift V2.2 en Windows
 
-Abre `field_shift.exe`. Conserva toda la carpeta, incluidos `data`, DLLs y `workers`; el exe solo no funciona. No requiere instalar Python. No hay nube ni cuenta obligatoria. Distribución de prueba sin firma digital.
+Sigue el [arranque del README](../README.md). Para usar una distribución compilada, abre field_shift.exe desde la carpeta que también contiene los datos del ejecutable, las DLL y el procesador Python.
 
-1. Escribe latitud y longitud (ejemplo de navegación: `-13.718, -76.148`). El mapa también se desplaza y amplía con ratón.
-2. Pulsa **Marcar mi terreno** y toca sus esquinas. Para corregir, pulsa el número de un punto y luego su nueva posición. Puedes deshacer o quitarlo. Guarda con un nombre.
-3. En **Análisis**, elige fechas y qué observar, pulsa **Buscar imágenes** y selecciona una escena. Se lee únicamente una ventana de bandas para el terreno. Un análisis puede tardar y necesita internet; **Cancelar** detiene el procesador.
-4. El resultado muestra fecha, fuente, resolución y cobertura válida. **Historial guardado** permite abrir resultados locales y comparar dos fechas compatibles sin mover el mapa.
-5. **Configuración → Modo avanzado** habilita bandas, Landsat, fórmulas y consulta del píxel. **Trabajar sin internet** utiliza las zonas ya consultadas y los análisis guardados.
+## Idioma y terreno
 
-NASA GIBS es una vista regional RGB de 250 m: no se calcula NDVI desde esas teselas. Sentinel-2 se procesa a 20 m efectivos y Landsat óptico a 30 m; temperatura Landsat a 100 m. POWER es regional y conserva las unidades del proveedor. Pocos píxeles o mucha nubosidad limitan la interpretación.
+- La interfaz abre en inglés. Usa **EN** en la barra o **Settings → Language → Español**. La elección se conserva al cerrar la app.
+- En ventanas estrechas, la barra inferior muestra **Home**, **Fields**, **Map**, **Plan** y **More**. Abre **More** para llegar a **Observations** y **Settings**.
+- En **Home**, pulsa **Add field** y marca al menos tres esquinas en el mapa. **Go to coordinates** centra el mapa con latitud y longitud. Usa **Save field** y escribe un nombre. Las notas adicionales son opcionales.
+- En **My fields**, abre las opciones del terreno para editarlo, revisar observaciones o planear cultivos. Para corregir un punto del contorno, selecciona su número y luego elige la nueva posición.
 
-Los datos se guardan en la carpeta de soporte del usuario, indicada en Configuración; no junto al ejecutable. Conserva esa carpeta para respaldar tus terrenos. Caché de teselas 128 MB y de raster 512 MB. Un resultado antiguo cuyo raster fue retirado conserva sus estadísticas; vuelve a procesar la misma escena para recuperarlo. La aplicación muestra hasta 30 escenas por búsqueda: acota fechas si necesitas otra observación.
+## Revisar un mes y sus observaciones
 
-Esta versión no tiene recomendaciones de riego, fertilización, enfermedad o rotación. No se ha validado con agricultores reales ni como medición catastral. No mezcles series Sentinel-2 y Landsat como si fueran equivalentes. Consulta `PROJECT_STATUS.md` y `REQUIREMENTS_TRACEABILITY.md` del repositorio para conocer pruebas y pendientes.
+1. Abre **Observations → Period → By month**. Elige el año, pulsa **February** y confirma con **Use period**. También puedes usar **Recent** o escribir **Custom dates**.
+2. En **Satellite images**, elige qué quieres ver y pulsa **Find images**. Abre una fecha para calcular la observación sobre el terreno. **Data and method** permite consultar y copiar estadísticas, resolución, procedencia y método. **Settings → Advanced tools** habilita Landsat, el límite de nubes y la consulta local por píxel.
+3. En **Weather history**, pulsa **Get weather history**. **Daily records** muestra los días de la serie y las unidades de NASA POWER. Usa las flechas para ver las fechas anteriores.
+4. Para revisar la corrección de fuentes, abre **Crop planning → Rule sources**. Los enlaces se pueden copiar al portapapeles.
+
+Los nombres equivalentes en español son **Observaciones**, **Período**, **Por mes**, **febrero**, **Usar período**, **Datos y método**, **Datos por día** y **Fuentes de las reglas**.
+
+## Planear la siembra
+
+Abre **Crop planning**, elige un terreno y guarda los datos que conoces. En el piloto de maíz bajo riego en la costa de Lambayeque, la app compara la referencia con las opciones de cultivo aplicables y muestra los datos que conviene confirmar. La zona, el riego, el suelo y el mes limitan las sugerencias. Revisa variedad, calendario y manejo con asesoría local.
+
+## Usar lo guardado sin internet
+
+**Settings → Work offline** abre terrenos, resultados y teselas consultadas. Los nuevos pedidos al satélite o al servicio climático requieren conexión. La ruta de datos se consulta en **Settings → Local storage**.

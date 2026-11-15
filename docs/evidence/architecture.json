@@ -1,16 +1,19 @@
 {
   "status": "PASS",
   "dependencies": {
-    "field_compute": [
-      "field_core",
-      "field_imagery"
+    "field_maps": [
+      "field_core"
     ],
-    "field_core": [],
     "field_imagery": [
       "field_core"
     ],
-    "field_maps": [
+    "field_rotations": [
       "field_core"
+    ],
+    "field_core": [],
+    "field_compute": [
+      "field_core",
+      "field_imagery"
     ],
     "field_nasa": [
       "field_core",

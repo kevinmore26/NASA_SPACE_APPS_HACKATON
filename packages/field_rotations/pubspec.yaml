@@ -1,0 +1,11 @@
+name: field_rotations
+description: Comparación local de rotaciones mediante reglas documentadas.
+version: 1.0.0
+publish_to: none
+resolution: workspace
+environment:
+  sdk: ^3.13.1
+dependencies:
+  field_core: any
+dev_dependencies:
+  test: ^1.25.6

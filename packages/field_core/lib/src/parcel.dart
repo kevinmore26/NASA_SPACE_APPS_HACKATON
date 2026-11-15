@@ -1,8 +1,10 @@
+import 'farm_planning.dart';
 import 'geometry.dart';
 
-/// Public v1 local agricultural record. Values are farmer-provided, not observations.
+/// Local agricultural record. Free-text V1 fields remain available in V2.
 class FarmRecord {
   final String crop, history, soil, water, irrigation, budget, priorities;
+  final FarmPlanning? planning;
   const FarmRecord({
     this.crop = '',
     this.history = '',
@@ -11,7 +13,13 @@ class FarmRecord {
     this.irrigation = '',
     this.budget = '',
     this.priorities = '',
+    this.planning,
   });
+  String get currentCropLabel {
+    final kind = planning?.crop;
+    return kind == null || kind == FarmCrop.other ? crop : kind.label;
+  }
+
   Map<String, dynamic> toJson() => {
     'crop': crop,
     'history': history,
@@ -20,6 +28,7 @@ class FarmRecord {
     'irrigation': irrigation,
     'budget': budget,
     'priorities': priorities,
+    if (planning != null) 'planning': planning!.toJson(),
   };
   factory FarmRecord.fromJson(Map<String, dynamic> j) => FarmRecord(
     crop: j['crop'] as String? ?? '',
@@ -29,6 +38,7 @@ class FarmRecord {
     irrigation: j['irrigation'] as String? ?? '',
     budget: j['budget'] as String? ?? '',
     priorities: j['priorities'] as String? ?? '',
+    planning: FarmPlanning.fromJson(j['planning'] as Map<String, dynamic>?),
   );
 }
 

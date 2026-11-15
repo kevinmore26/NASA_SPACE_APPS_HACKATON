@@ -26,7 +26,7 @@ void main() {
           },
           'properties': {
             'parameter': {
-              'T2M': {'20250101': 24.5, '20250102': -999},
+              'T2M': {'20250101': 24.5, '20250102': -999, '20250103': false},
             },
           },
         }),
@@ -37,6 +37,7 @@ void main() {
         .daily(GeoPoint(-13.7, -76.1), DateTime(2025), DateTime(2025, 1, 2));
     expect(series.value('T2M', '20250101'), 24.5);
     expect(series.value('T2M', '20250102'), null);
+    expect(series.value('T2M', '20250103'), null);
     expect(series.units['T2M']['units'], 'C');
     client.close();
   });
