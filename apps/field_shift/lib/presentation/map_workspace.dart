@@ -26,7 +26,7 @@ class MapWorkspace extends StatefulWidget {
     required this.analyzing,
     required this.save,
     required this.delete,
-    this.locateDevice = device.requestLocation,
+    this.locateDevice,
   });
 
   @override
@@ -37,6 +37,8 @@ class _MapWorkspaceState extends State<MapWorkspace> {
   final _map = FieldMapController();
   final _coordinates = TextEditingController();
   FieldController get m => widget.model;
+  Future<GeoPoint?> Function()? get _locateDevice =>
+      widget.locateDevice ?? device.requestLocation;
   FieldGeometry? _geometry;
   String? _resultPath;
   Future<ImageProvider?>? _preview;
@@ -76,7 +78,7 @@ class _MapWorkspaceState extends State<MapWorkspace> {
   }
 
   Future<void> _useDeviceLocation() async {
-    final locate = widget.locateDevice;
+    final locate = _locateDevice;
     if (locate == null || _locating) return;
     final draft = m.vertices;
     final coordinateMoves = _coordinateMoves;
@@ -226,7 +228,7 @@ class _MapWorkspaceState extends State<MapWorkspace> {
           const SizedBox(height: 12),
         ],
         if (m.editing) ...[
-          if (parcel == null && widget.locateDevice != null) ...[
+          if (parcel == null && _locateDevice != null) ...[
             OutlinedButton.icon(
               onPressed: _locating || m.isBusy ? null : _useDeviceLocation,
               icon: _locating
