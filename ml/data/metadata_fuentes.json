@@ -1,0 +1,11 @@
+{
+  "zona": "Punto de prueba (editar por zona agrícola real)",
+  "latitude": -13.718,
+  "longitude": -76.148,
+  "periodo_start": "20150101",
+  "periodo_end": "20241231",
+  "fuente_clima": "NASA POWER Daily API",
+  "fuente_perfiles": "https://raw.githubusercontent.com/OpenCLIM/ecocrop/main/EcoCrop_DB.csv",
+  "metodo": "ventanas de ciclo EcoCrop aproximadas; puntaje=min(temperatura, precipitacion); media de mejor ventana por año",
+  "nota": "Preseleccion climatica regional; no es rendimiento ni recomendacion agronomica validada."
+}
