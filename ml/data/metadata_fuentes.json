@@ -1,11 +1,85 @@
 {
   "zona": "Punto de prueba (editar por zona agrícola real)",
-  "latitude": -13.718,
-  "longitude": -76.148,
-  "periodo_start": "20150101",
-  "periodo_end": "20241231",
+  "latitud": -13.718,
+  "longitud": -76.148,
+  "radio_km": 40.0,
+  "puntos": [
+    {
+      "id": "punto_1_centro",
+      "lat": -13.718,
+      "lon": -76.148,
+      "distance_km": 0.0,
+      "source": "centro"
+    },
+    {
+      "id": "punto_2_anillo_000",
+      "lat": -13.358271854510184,
+      "lon": -76.14800000000002,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_3_anillo_045",
+      "lat": -13.463496941563957,
+      "lon": -75.88644668635396,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_4_anillo_090",
+      "lat": -13.717724339837083,
+      "lon": -75.7777094757073,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_5_anillo_135",
+      "lat": -13.97222739379359,
+      "lon": -75.88587917172771,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_6_anillo_180",
+      "lat": -14.077728145489814,
+      "lon": -76.14800000000002,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_7_anillo_225",
+      "lat": -13.97222739379359,
+      "lon": -76.41012082827228,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_8_anillo_270",
+      "lat": -13.717724339837083,
+      "lon": -76.5182905242927,
+      "distance_km": 40.0,
+      "source": "anillo"
+    },
+    {
+      "id": "punto_9_anillo_315",
+      "lat": -13.463496941563957,
+      "lon": -76.40955331364603,
+      "distance_km": 40.0,
+      "source": "anillo"
+    }
+  ],
+  "periodo_inicio": "20150101",
+  "periodo_fin": "20241231",
   "fuente_clima": "NASA POWER Daily API",
-  "fuente_perfiles": "https://raw.githubusercontent.com/OpenCLIM/ecocrop/main/EcoCrop_DB.csv",
-  "metodo": "ventanas de ciclo EcoCrop aproximadas; puntaje=min(temperatura, precipitacion); media de mejor ventana por año",
-  "nota": "Preseleccion climatica regional; no es rendimiento ni recomendacion agronomica validada."
+  "variables": [
+    "T2M",
+    "T2M_MIN",
+    "T2M_MAX",
+    "PRECTOTCORR",
+    "RH2M",
+    "ALLSKY_SFC_SW_DWN",
+    "WS10M"
+  ],
+  "metodo": "score EcoCrop por punto; promedio y variabilidad en el radio; cinco alternativas no óptimas si no hay score positivo",
+  "nota": "clima regional, no resolución parcelaria; salidas no son rendimiento ni prescripción agronómica"
 }

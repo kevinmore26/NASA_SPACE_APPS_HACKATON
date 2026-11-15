@@ -1,0 +1,495 @@
+﻿puesto,cultivo_comun,nombre_cientifico,categoria,score_escenario_actual_0_100,score_condicional_con_agua_0_100,escenario_hidrico,inicio_ciclo_representativo,ciclo_dias,score_temperatura,score_lluvia_escenario_actual,lluvia_del_ciclo_mm,deficit_hasta_minimo_ecocrop_mm,dias_con_calor_sobre_limite,T2M_min_ciclo_C,T2M_max_ciclo_C,humedad_media_pct,radiacion_media_MJ_m2_dia,viento_medio_m_s,cobertura_datos_suelo_pct,score_ph,score_textura,score_profundidad,score_salinizacion,score_drenaje,anios_evaluados
+188,mobola-plum,Parinari curatellifolia,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,38.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+128,River cooba,Acacia stenophylla,"forage/pasture, fruits & nuts, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,74.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+129,Bramble wattle,Acacia victoriae,"forage/pasture, fruits & nuts, materials, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,74.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+127,Mulga,Acacia aneura,"fruits & nuts, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,124.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+141,snotappel,Azanza garckeana,"forage/pasture, fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+208,tooth brush tree,Salvadora persica,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+239,eelgrass,Zostera marina,"forage/pasture, fruits & nuts, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,163.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+142,desert date,Balanites aegyptiaca,"fruits & nuts, medicinals & aromatic, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,165.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+60,hyacinth bean,Lablab purpureus,"forage/pasture, vegetables, ornamentals/turf, cover crop, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,170.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+187,proso millet,Panicum miliaceum,cereals & pseudocereals,0.0,100.0,solo lluvia (riego no confirmado),01-01,55,100.0,0.0,20.3,179.7,0,16.4,27.1,77.0,24.22,3.6,0.0,,,,,,10
+240,papaw,Asimina triloba,"fruits & nuts, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,130,100.0,0.0,36.8,188.2,0,16.4,27.6,77.5,22.46,3.51,0.0,,,,,,10
+6,amaranth,Amaranthus sp.,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,191.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+176,sea buckthorn,Hippophae rhamnoides,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-02,120,100.0,0.0,5.9,194.1,0,13.3,27.0,72.5,15.95,4.1,0.0,,,,,,10
+58,barley,Hordeum vulgare,"cereals & pseudocereals, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-16,90,100.0,0.0,4.3,195.8,0,13.3,26.4,72.4,15.63,4.13,0.0,,,,,,10
+119,almond,Prunus amygdalus,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,212.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+99,broad bean,Vicia faba,"pulses (grain legumes), medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,100,100.0,0.0,35.8,214.2,0,16.4,27.6,78.2,23.12,3.44,0.0,,,,,,10
+94,potato,Solanum tuberosum,"roots/tubers, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,215.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+215,Indian rennet,Solanum incanum,"vegetables, medicinals & aromatic, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,215.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+181,lentil,Lens culinaris,"pulses (grain legumes), medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,220.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+250,sugarbeet,Beta vulgaris var. saccharifera,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,224.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+121,yellow plum,Ximenia americana,"fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,238.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+238,buffalo thorn,Ziziphus mucronata,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,238.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+257,catchthorn,Ziziphus abyssinica,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,238.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+105,amaranths,Amaranthus caudatus,"cereals & pseudocereals, forage/pasture, vegetables, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,241.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+12,oat,Avena sativa,"cereals & pseudocereals, cover crop",0.0,100.0,solo lluvia (riego no confirmado),04-09,110,100.0,0.0,5.3,244.7,0,13.3,27.0,72.3,15.56,4.12,0.0,,,,,,10
+30,lemon,Citrus limon,"fruits & nuts, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,259.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+40,globe artichoke,Cynara scolymus,"vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,259.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+55,strawberry,Fragaria x ananassa,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,261.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+116,black mulberry,Morus nigra,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,261.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+146,swede,Brassica napus var. napobrassica,"roots/tubers, forage/pasture",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,261.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+196,gean,Prunus avium,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,261.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+45,kaki,Diospyros kaki,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,262.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+186,cactus pear,Opuntia ficus-indica,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,140,100.0,0.0,37.4,262.6,0,16.4,27.6,77.2,22.0,3.54,0.0,,,,,,10
+222,small reed mace,Typha angustifolia,"vegetables, materials, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,130,100.0,0.0,36.8,263.2,0,16.4,27.6,77.5,22.46,3.51,0.0,,,,,,10
+223,reed mace,Typha latifolia,"forage/pasture, vegetables, materials, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,130,100.0,0.0,36.8,263.2,0,16.4,27.6,77.5,22.46,3.51,0.0,,,,,,10
+51,feijoa,Feijoa sellowiana,"fruits & nuts, ornamentals/turf, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,263.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+52,common fig,Ficus carica,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,263.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+86,European raspberry,Rubus idaeus ssp. idaeus,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,263.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+150,caper,Capparis spinosa,"vegetables, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,263.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+177,bulbous barley,Hordeum bulbosum,cereals & pseudocereals,0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,263.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+29,chicory,Cichorium intybus,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+42,crowfoot grass,Dactyloctenium aegyptium,"cereals & pseudocereals, forage/pasture, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+124,chickpea,Cicer arietinum,pulses (grain legumes),0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+163,tiger nut,Cyperus esculentus,"roots/tubers, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+175,liquorice,Glycyrrhiza glabra,"roots/tubers, forage/pasture, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+230,bambara groundnut,Vigna subterranea,pulses (grain legumes),0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+247,bitter vetch,Vicia ervilia,"pulses (grain legumes), forage/pasture, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,265.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+3,onion,Allium cepa,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,85,100.0,0.0,34.2,265.8,0,16.4,27.1,78.5,23.27,3.42,0.0,,,,,,10
+17,Onions (bulb),Allium cepa var. cepa,"vegetables, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,85,100.0,0.0,34.2,265.8,0,16.4,27.1,78.5,23.27,3.42,0.0,,,,,,10
+8,celery,Apium graveolens var. dulce,"vegetables, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,267.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+38,pumpkin,Cucurbita moschata,"forage/pasture, fruits & nuts, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,267.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+57,Jerusalem artichoke,Helianthus tuberosus,"roots/tubers, forage/pasture, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,267.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+169,finger millet,Eleusine coracana ssp. coracana,"cereals & pseudocereals, forage/pasture, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,75,100.0,0.0,29.8,270.2,0,16.4,27.1,78.2,23.5,3.51,0.0,,,,,,10
+28,endive,Cichorium endivia,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,270.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+96,tamarind,Tamarindus indica,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,270.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+46,barnyard grass,Echinochloa crus-galli,"cereals & pseudocereals, forage/pasture, vegetables, environmental, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,273.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+19,cabbage,Brassica oleracea var. capitata,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,274.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+31,grapefruit,Citrus paradisi,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,274.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+53,potato onion,Allium cepa var. aggregatum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,274.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+125,tepary bean,Phaseolus acutifolius,"pulses (grain legumes), cover crop",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,274.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+147,thousand head kale,Brassica oleracea var. acephala,"forage/pasture, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,274.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+212,foxtail millet,Setaria italica,"cereals & pseudocereals, forage/pasture",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,274.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+1,abelmoskus,Abelmoschus esculentus,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,281.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+76,common bean,Phaseolus vulgaris,"pulses (grain legumes), forage/pasture, vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,281.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+180,grass pea,Lathyrus sativus,"pulses (grain legumes), forage/pasture, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,100,100.0,0.0,35.8,284.2,0,16.4,27.6,78.2,23.12,3.44,0.0,,,,,,10
+39,marrow,Cucurbita pepo,"fruits & nuts, vegetables, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,286.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+67,horse gram,Macrotyloma uniflorum,"pulses (grain legumes), forage/pasture, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,286.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+102,rice bean,Vigna umbellata,"pulses (grain legumes), forage/pasture, vegetables, cover crop, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,286.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+159,gherkin,Cucumis anguria,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,286.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+113,wild strawberry,Fragaria vesca,"fruits & nuts, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),03-12,180,100.0,0.0,11.4,288.6,0,12.9,27.6,72.2,15.96,3.99,0.0,,,,,,10
+33,coriander,Coriandrum sativum,"vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,35,100.0,0.0,10.2,289.8,0,16.4,26.7,75.6,25.06,3.76,0.0,,,,,,10
+144,borage,Borago officinalis,"vegetables, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),05-07,150,100.0,0.0,8.5,291.5,0,12.9,25.9,69.2,14.22,4.23,0.0,,,,,,10
+54,fennel,Foeniculum vulgare,"vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,291.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+133,smooth pigweed,Amaranthus hybridus,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,291.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+87,dewberry,Rubus sp.,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-02,120,100.0,0.0,5.9,294.1,0,13.3,27.0,72.5,15.95,4.1,0.0,,,,,,10
+97,wheat,Triticum aestivum,"cereals & pseudocereals, forage/pasture, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-09,90,100.0,0.0,5.2,294.8,0,15.3,27.0,72.9,16.11,4.03,0.0,,,,,,10
+148,Pak Choi,Brassica rapa Pak Choi,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,21,100.0,0.0,4.6,295.4,0,16.4,26.7,72.9,25.87,3.89,0.0,,,,,,10
+206,black raspberry,Rubus occidentalis,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),05-07,120,100.0,0.0,4.5,295.6,0,12.9,25.9,69.9,13.67,4.27,0.0,,,,,,10
+209,garden burnet,Sanguisorba minor,"forage/pasture, vegetables",0.0,100.0,solo lluvia (riego no confirmado),05-07,90,100.0,0.0,4.0,296.0,0,13.3,25.9,70.8,13.79,4.31,0.0,,,,,,10
+22,Chinese chives,Allium tuberosum,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-23,70,100.0,0.0,2.4,297.6,0,15.3,26.1,73.1,15.47,4.11,0.0,,,,,,10
+34,chives,Allium schoenoprasum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),04-23,70,100.0,0.0,2.4,297.6,0,15.3,26.1,73.1,15.47,4.11,0.0,,,,,,10
+73,parsley,Petroselinum crispum,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-23,70,100.0,0.0,2.4,297.6,0,15.3,26.1,73.1,15.47,4.11,0.0,,,,,,10
+95,spinach,Spinacia oleracea,vegetables,0.0,100.0,solo lluvia (riego no confirmado),05-07,40,100.0,0.0,2.2,297.8,0,15.3,25.9,73.1,15.47,4.19,0.0,,,,,,10
+160,fig-leaved gourd,Cucurbita ficifolia,"vegetables, materials, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),04-16,40,100.0,0.0,1.4,298.6,0,15.9,26.4,74.1,18.97,3.92,0.0,,,,,,10
+184,Andean lupin,Lupinus mutabilis,"pulses (grain legumes), forage/pasture, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,312.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+253,bergamot orange,Citrus aurantium ssp. bergamia,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,140,100.0,0.0,37.4,312.6,0,16.4,27.6,77.2,22.0,3.54,0.0,,,,,,10
+211,river bean,Sesbania sesban,"forage/pasture, vegetables, materials, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,313.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+20,broccoli,Brassica oleracea var. italica,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,317.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+255,garden vetch,Vicia sativa ssp. nigra,"pulses (grain legumes), forage/pasture, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,317.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+79,pea,Pisum sativum,"pulses (grain legumes), medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,324.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+183,white lupin,Lupinus albus,"pulses (grain legumes), materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,325.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+131,mahogany bean,Afzelia quanzensis,"vegetables, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+166,African ebony,Diospyros mespiliformis,"fruits & nuts, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+205,mongongo nut,Ricinodendron rautanenii,"forage/pasture, fruits & nuts, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+218,bush orange,Strychnos cocculoides,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+191,Ghilghoza pine,Pinus gerardiana,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,338.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+2,wild leek,Allium ampeloprasum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),04-09,120,100.0,0.0,5.5,344.6,0,13.3,27.0,71.9,15.26,4.13,0.0,,,,,,10
+143,slough grass,Beckmannia eruciformis,"cereals & pseudocereals, materials",0.0,100.0,solo lluvia (riego no confirmado),04-16,100,100.0,0.0,4.4,345.6,0,13.3,26.4,72.1,15.41,4.18,0.0,,,,,,10
+7,mamuang himmaphan,Anacardium occidentale,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,190,100.0,0.0,40.4,359.6,0,14.9,27.6,75.6,19.73,3.74,0.0,,,,,,10
+69,wild crab,Malus sylvestris,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,361.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+103,grape,Vitis vinifera,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,160,100.0,0.0,38.9,361.1,0,15.6,27.6,76.7,21.12,3.62,0.0,,,,,,10
+161,squash,Cucurbita mixta,"vegetables, materials, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,170,100.0,0.0,38.9,361.1,0,15.3,27.6,76.5,20.65,3.67,0.0,,,,,,10
+192,Italian stone pine,Pinus pinea,"fruits & nuts, ornamentals/turf, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,361.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+246,bur-reed,Sparganium erectum,"roots/tubers, vegetables, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,361.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+81,guava,Psidium guajava,"fruits & nuts, forest/wood, environmental, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,362.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+115,walnut,Juglans regia,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,362.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+108,Pecan,Carya illinoensis,"fruits & nuts, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,140,100.0,0.0,37.4,362.6,0,16.4,27.6,77.2,22.0,3.54,0.0,,,,,,10
+25,cayenne pepper,Capsicum frutescens,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,363.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+158,sea kale,Crambe maritima,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,363.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+221,durum wheat,Triticum durum,cereals & pseudocereals,0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,363.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+140,Algerian oat,Avena byzantina,"cereals & pseudocereals, forage/pasture",0.0,100.0,solo lluvia (riego no confirmado),01-01,110,100.0,0.0,36.5,363.4,0,16.4,27.6,78.1,22.9,3.45,0.0,,,,,,10
+21,congo pea,Cajanus cajan,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,365.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+185,buffalo bean,Mucuna pruriens,"forage/pasture, vegetables, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,365.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+242,showy milkweed,Asclepias speciosa,"vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,365.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+16,rape,Brassica napus,"forage/pasture, vegetables, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,85,100.0,0.0,34.2,365.8,0,16.4,27.1,78.5,23.27,3.42,0.0,,,,,,10
+74,chamborote,Phaseolus coccineus,"pulses (grain legumes), roots/tubers, forage/pasture, ornamentals/turf, medicinals & aromatic, cover crop",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,367.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+65,tomato,Lycopersicon esculentum,"forage/pasture, vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,370.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+172,India wheat,Fagopyrum tataricum,"cereals & pseudocereals, forage/pasture, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,370.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+256,corn,Zea mays ssp. mays,"cereals & pseudocereals, forage/pasture, vegetables, materials, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,65,100.0,0.0,29.1,370.9,0,16.4,27.1,77.6,23.99,3.55,0.0,,,,,,10
+75,broad bean,Phaseolus lunatus,"pulses (grain legumes), forage/pasture, vegetables, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,374.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+122,rhubarb,Rheum rhaponticum,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,374.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+232,black-eyed pea,Vigna unguiculata ssp. unguiculata,"pulses (grain legumes), forage/pasture, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,374.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+138,horseradish,Armoracia rusticana,vegetables,0.0,100.0,solo lluvia (riego no confirmado),03-19,150,100.0,0.0,10.8,379.2,0,12.9,27.6,72.4,16.16,4.04,0.0,,,,,,10
+112,buckwheat,Fagopyrum esculentum,"cereals & pseudocereals, forage/pasture, vegetables, materials, cover crop",0.0,100.0,solo lluvia (riego no confirmado),01-01,55,100.0,0.0,20.3,379.7,0,16.4,27.1,77.0,24.22,3.6,0.0,,,,,,10
+32,blue clitoria,Clitoria ternatea,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, cover crop",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,381.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+36,cucumber,Cucumis sativus,"fruits & nuts, vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,386.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+43,wild carrot,Daucus carota,"roots/tubers, forage/pasture, vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,386.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+89,rye,Secale cereale,"cereals & pseudocereals, forage/pasture, cover crop, environmental",0.0,100.0,solo lluvia (riego no confirmado),04-09,110,100.0,0.0,5.3,394.7,0,13.3,27.0,72.3,15.56,4.12,0.0,,,,,,10
+227,cranberry,Vaccinium macrocarpon,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),04-09,100,100.0,0.0,5.3,394.7,0,13.3,27.0,72.4,15.96,4.09,0.0,,,,,,10
+225,low-bush blueberry,Vaccinium angustifolium,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),04-16,100,100.0,0.0,4.4,395.6,0,13.3,26.4,72.1,15.41,4.18,0.0,,,,,,10
+145,browntop millet,Brachiaria ramosa,"cereals & pseudocereals, forage/pasture",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,405.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+47,goose foot,Eleusine indica,"cereals & pseudocereals, forage/pasture, vegetables, environmental, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,413.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+179,Kersting's groundnut,Kerstingiella geocarpa,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,415.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+37,pumpkin,Cucurbita maxima,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,417.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+210,common club-rush,Scirpus lacustris,"roots/tubers, vegetables, materials, ornamentals/turf, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,417.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+56,soya bean,Glycine max,pulses (grain legumes),0.0,100.0,solo lluvia (riego no confirmado),01-01,75,100.0,0.0,29.8,420.2,0,16.4,27.1,78.2,23.5,3.51,0.0,,,,,,10
+18,cauliflower,Brassica oleracea var. botrytis,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,424.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+136,wild custard apple,Annona senegalensis,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+174,pharaoh's fig,Ficus sycomorus,"forage/pasture, fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+202,dogwood,Rhamnus prinoides,"fruits & nuts, ornamentals/turf, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+11,asparagus,Asparagus officinalis,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,459.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+26,casimiroa,Casimiroa edulis,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,459.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+151,mountain papaw,Carica pubescens,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,459.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+157,Satsuma mandarin,Citrus unshiu,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,459.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+13,Silver beet,Beta vulgaris,"roots/tubers, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,160,100.0,0.0,38.9,461.1,0,15.6,27.6,76.7,21.12,3.62,0.0,,,,,,10
+68,apple,Malus domestica,"fruits & nuts, materials, ornamentals/turf, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,461.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+162,quince,Cydonia oblonga,"fruits & nuts, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,461.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+197,sour cherry,Prunus cerasus,"fruits & nuts, materials, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,461.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+224,wild loquat,Uapaca kirkiana,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,461.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+109,chestnut,Castanea sativa,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,462.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+126,melon shrub,Solanum muricatum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,462.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+203,black currant,Ribes nigrum,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,462.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+204,gooseberry,Ribes uva-crispa,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,462.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+244,pickerel weed,Pontederia cordata,"vegetables, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,463.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+189,green arrow arum,Peltandra virginica,"vegetables, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,110,100.0,0.0,36.5,463.4,0,16.4,27.6,78.1,22.9,3.45,0.0,,,,,,10
+5,garlic,Allium sativum,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,465.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+48,red tasselflower,Emilia sonchifolia,"vegetables, medicinals & aromatic, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,465.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+251,fodder radish,Raphanus sativus var. oleiferus,"forage/pasture, vegetables, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,470.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+24,sweet pepper,Capsicum annuum,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,474.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+15,Indian mustard,Brassica juncea,"vegetables, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,481.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+82,winged bean,Psophocarpus tetragonolobus,"pulses (grain legumes), roots/tubers, forage/pasture, vegetables, materials, cover crop, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,481.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+101,green gram (India),Vigna radiata,"pulses (grain legumes), forage/pasture, cover crop, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,481.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+123,Silver beet,Beta vulgaris var. cicla,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,481.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+14,Chinese cabbage,Brassica chinensis,"vegetables, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,486.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+216,gboma eggplant,Solanum macrocarpon,"vegetables, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,486.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+134,prince's feather,Amaranthus hypochondriacus,"cereals & pseudocereals, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,491.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+80,purslane,Portulaca oleracea,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,21,100.0,0.0,4.6,495.4,0,16.4,26.7,72.9,25.87,3.89,0.0,,,,,,10
+241,radish,Raphanus sativus var. radicula,"vegetables, materials, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,21,100.0,0.0,4.6,495.4,0,16.4,26.7,72.9,25.87,3.89,0.0,,,,,,10
+100,adzuki bean,Vigna angularis,"pulses (grain legumes), forage/pasture, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,504.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+193,coleus potato,Plectranthus esculentus,"roots/tubers, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,511.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+118,oca,Oxalis tuberosa,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,531.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+149,mitserie,Bridelia micrantha,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+219,water berry,Syzygium cordatum,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+229,common wild medlar,Vangueria madagascariensis,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+233,Afetewa,Vitex doniana,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+173,American beech,Fagus grandifolia,"fruits & nuts, ornamentals/turf, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,95,100.0,0.0,34.8,545.2,0,16.4,27.6,78.3,23.17,3.44,0.0,,,,,,10
+41,tree tomato,Cyphomandra betacea,"fruits & nuts, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,270,100.0,0.0,44.9,555.1,0,12.9,27.6,73.3,17.98,3.89,0.0,,,,,,10
+106,cherimoya,Annona cherimola,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,559.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+195,leafcup,Polymnia sonchifolia,"roots/tubers, materials, cover crop",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,561.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+198,Japanese apricot,Prunus mume,"fruits & nuts, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,561.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+207,old-world arrowhead,Sagittaria sagittifolia,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,561.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+245,common plum,Prunus domestica,"fruits & nuts, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,561.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+110,hazel nut,Corylus avellana,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,562.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+90,chayote,Sechium edule,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,100,100.0,0.0,35.8,564.2,0,16.4,27.6,78.2,23.12,3.44,0.0,,,,,,10
+107,Sword bean,Canavalia gladiata,"pulses (grain legumes), forage/pasture, vegetables, cover crop, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,565.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+23,jack bean,Canavalia ensiformis,"pulses (grain legumes), forage/pasture, cover crop",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,567.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+70,basil,Ocimum basilicum,"vegetables, medicinals & aromatic, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,567.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+190,tomatillo,Physalis philadelphica,"vegetables, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,567.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+236,sweet corn,Zea mays ssp. saccharata,"forage/pasture, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,65,100.0,0.0,29.1,570.9,0,16.4,27.1,77.6,23.99,3.55,0.0,,,,,,10
+139,arracacha,Arracacia xanthorrhiza,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),02-26,120,100.0,0.0,16.8,583.2,0,15.3,27.6,76.0,18.52,3.73,0.0,,,,,,10
+168,water hyacinth,Eichhornia crassipes,"forage/pasture, vegetables, materials, ornamentals/turf, environmental, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,591.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+182,cress,Lepidium sativum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-15,10,100.0,0.0,1.5,598.5,0,16.4,26.7,72.4,26.57,3.69,0.0,,,,,,10
+135,mountain soursop,Annona montana,"fruits & nuts, vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,599.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+199,Japanese plum,Prunus salicina,"fruits & nuts, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,611.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+231,asparagus bean,Vigna unguiculata ssp. sesquipedalis,"pulses (grain legumes), forage/pasture, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,631.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+132,rakkyo,Allium chinense,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,45,100.0,0.0,16.2,633.8,0,16.4,27.1,76.8,24.52,3.61,0.0,,,,,,10
+66,macadamia nut,Macadamia integrifolia,"fruits & nuts, materials, ornamentals/turf, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,638.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+228,false medlar,Vangueria infausta,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,638.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+235,Yucca,Yucca elephantipes,"vegetables, ornamentals/turf, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,270,100.0,0.0,44.9,655.1,0,12.9,27.6,73.3,17.98,3.89,0.0,,,,,,10
+243,roseapple,Eugenia jambos,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,659.5,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+72,giant granadilla,Passiflora quadrangularis,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,661.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+92,naranjilla,Solanum quitoense,"fruits & nuts, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,661.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+214,cocona shrub,Solanum hyporhodium,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,661.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+226,high-bush blueberry,Vaccinium corymbosum,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,160,100.0,0.0,38.9,661.1,0,15.6,27.6,76.7,21.12,3.62,0.0,,,,,,10
+93,prickly solanum,Solanum torvum,"vegetables, medicinals & aromatic, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,662.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+130,hardy kiwi,Actinidia arguta,"fruits & nuts, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,662.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+167,Kei apple,Dovyalis caffra,"fruits & nuts, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,663.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+63,litchi,Litchi chinensis,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,100,100.0,0.0,35.8,664.2,0,16.4,27.6,78.2,23.12,3.44,0.0,,,,,,10
+237,Teosinte,Euchlaena mexicana,"cereals & pseudocereals, forage/pasture, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,667.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+4,branching onion,Allium fistulosum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,674.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+62,calabas,Lagenaria siceraria,"fruits & nuts, vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,674.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+64,angled loofah,Luffa acutangula,"vegetables, materials, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,40,100.0,0.0,13.9,686.1,0,16.4,26.7,76.4,24.68,3.63,0.0,,,,,,10
+59,water spinach,Ipomoea aquatica,"forage/pasture, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,691.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+248,kang kong,Ipomoea aquatica var. reptans,"forage/pasture, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,30,100.0,0.0,8.3,691.7,0,16.4,26.7,74.6,25.56,3.76,0.0,,,,,,10
+137,celeriac,Apium graveolens var. rapaceum,vegetables,0.0,100.0,solo lluvia (riego no confirmado),05-07,80,100.0,0.0,3.9,696.1,0,13.3,25.9,71.1,14.03,4.3,0.0,,,,,,10
+27,kapok,Ceiba pentandra,"forage/pasture, fruits & nuts, materials, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,270,100.0,0.0,44.9,705.1,0,12.9,27.6,73.3,17.98,3.89,0.0,,,,,,10
+10,betel nut palm,Areca catechu,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,709.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+220,mahanim,Toona ciliata,"forage/pasture, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,711.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+200,white oak,Quercus alba,"forage/pasture, fruits & nuts, materials, ornamentals/turf, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,712.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+252,ahipa,Pachyrhizus ahipa,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,712.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+254,white arrow arum,Peltandra sagittifolia,"vegetables, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,130,100.0,0.0,36.8,713.2,0,16.4,27.6,77.5,22.46,3.51,0.0,,,,,,10
+104,tannia,Xanthosoma sagittifolium,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,713.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+9,hoop pine,Araucaria cunninghamii,"fruits & nuts, ornamentals/turf, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,759.5,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+164,longan,Dimocarpus longan var. longan,"fruits & nuts, ornamentals/turf, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,759.5,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+120,apricot,Prunus armeniaca,"forage/pasture, fruits & nuts, materials",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,761.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+194,weeping podocarpus,Podocarpus elatus,"fruits & nuts, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,761.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+50,thabyay-hypyoo,Syzygium cumini,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,762.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+153,Chinese chestnut,Castanea mollissima,"fruits & nuts, materials, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,762.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+201,rat-tailed radish,Raphanus caudatus,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,765.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+77,Andean uvilla,Physalis peruviana,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,767.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+213,scarlet eggplant,Solanum aethiopicum,"vegetables, ornamentals/turf",0.0,100.0,solo lluvia (riego no confirmado),01-01,75,100.0,0.0,29.8,770.2,0,16.4,27.1,78.2,23.5,3.51,0.0,,,,,,10
+91,eggplant,Solanum melongena,"vegetables, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,70,100.0,0.0,29.7,770.3,0,16.4,27.1,77.9,23.83,3.57,0.0,,,,,,10
+85,radish,Raphanus sativus,"roots/tubers, vegetables",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,781.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+98,ulluco,Ullucus tuberosus,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),04-02,120,100.0,0.0,5.9,794.1,0,13.3,27.0,72.5,15.95,4.1,0.0,,,,,,10
+84,puero,Pueraria phaseoloides,"roots/tubers, forage/pasture, materials, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,809.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+170,enset,Ensete ventricosum,"vegetables, materials, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,838.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+152,Japanese chestnut,Castanea crenata,"fruits & nuts, ornamentals/turf, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,862.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+154,chinquapin,Castanea pumila,"fruits & nuts, medicinals & aromatic, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,862.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+44,potato yam,Dioscorea bulbifera,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,865.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+35,rock melon,Cucumis melo,"vegetables, materials, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,50,100.0,0.0,18.3,881.7,0,16.4,27.1,76.8,24.33,3.57,0.0,,,,,,10
+61,lettuce,Lactuca sativa var. capitata,vegetables,0.0,100.0,solo lluvia (riego no confirmado),04-16,35,100.0,0.0,1.2,898.8,0,16.6,26.4,74.6,19.05,3.86,0.0,,,,,,10
+83,kudzu,Pueraria lobata,"roots/tubers, forage/pasture, ornamentals/turf, environmental, weed",0.0,100.0,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,909.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+49,coral bean,Erythrina fusca,"forage/pasture, vegetables, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+165,cush-cush,Dioscorea trifida,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,280,100.0,0.0,45.3,954.7,0,12.9,27.6,73.0,18.02,3.9,0.0,,,,,,10
+78,allspice,Pimenta dioica,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,962.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+88,duruka,Saccharum edule,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,962.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+111,black sapote,Diospyros digyna,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,962.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+249,intip-intip,Gelidiella acerosa,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,90,100.0,0.0,34.4,965.6,0,16.4,27.6,78.4,23.23,3.44,0.0,,,,,,10
+71,rice,Oryza sativa,cereals & pseudocereals,0.0,100.0,solo lluvia (riego no confirmado),01-01,80,100.0,0.0,33.0,967.0,0,16.4,27.1,78.5,23.25,3.46,0.0,,,,,,10
+155,star apple,Chrysophyllum albidum,"fruits & nuts, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1038.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+234,muscadine grape,Vitis rotundifolia,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,1062.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+178,guaba,Inga vera,"fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+156,calamondin,Citrofortunella x microcarpa,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,100.0,solo lluvia (riego no confirmado),01-01,300,100.0,0.0,45.9,1154.1,0,12.9,27.6,72.8,18.16,3.94,0.0,,,,,,10
+217,hausa potato,Solenostemon rotundifolius,roots/tubers,0.0,100.0,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,1162.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+171,palmiteiro,Euterpe edulis,fruits & nuts,0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1238.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+114,peach palm,Bactris gasipaes,"fruits & nuts, forest/wood",0.0,100.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+117,Water dropwort,Oenanthe javanica,vegetables,0.0,100.0,solo lluvia (riego no confirmado),01-01,60,100.0,0.0,25.8,1474.2,0,16.4,27.1,77.4,24.13,3.54,0.0,,,,,,10
+259,red mulberry,Morus rubra,fruits & nuts,0.0,99.9,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,609.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+258,kaki,Diospyros virginiana,"fruits & nuts, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,99.9,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,659.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+260,wild celery,Apium graveolens,"vegetables, medicinals & aromatic",0.0,99.8,solo lluvia (riego no confirmado),07-09,40,100.0,0.0,0.3,499.7,0,12.9,24.5,68.2,13.16,4.47,0.0,,,,,,10
+261,jojoba,Simmondsia chinensis,"forage/pasture, fruits & nuts, materials, medicinals & aromatic",0.0,99.7,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,63.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+262,Mexican avocado,Persea americana ssp. mexican,"fruits & nuts, environmental",0.0,99.7,solo lluvia (riego no confirmado),01-01,270,100.0,0.0,44.9,615.1,0,12.9,27.6,73.3,17.98,3.89,0.0,,,,,,10
+263,myrobalan,Terminalia bellirica,"fruits & nuts, materials, medicinals & aromatic",0.0,99.7,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,961.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+266,achira,Canna edulis,"roots/tubers, forage/pasture, materials, environmental",0.0,99.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,211.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+269,lucuma,Pouteria lucuma,"fruits & nuts, forest/wood",0.0,99.6,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,263.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+265,pear,Pyrus communis,"fruits & nuts, forest/wood",0.0,99.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,361.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+267,Sapodilla,Manilkara achras,"fruits & nuts, materials, forest/wood, environmental",0.0,99.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,361.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+268,sapodilla,Manilkara zapota,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,99.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,361.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+264,cassava,Manihot esculenta,roots/tubers,0.0,99.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,461.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+270,yellow mombin,Spondias mombin,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,99.5,solo lluvia (riego no confirmado),01-01,120,100.0,0.0,36.7,563.3,0,16.4,27.6,77.9,22.64,3.49,0.0,,,,,,10
+271,barinas nut,Caryodendron orinocense,"fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,99.5,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,761.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+274,mulberry,Morus alba,"forage/pasture, fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,99.4,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,261.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+277,tef,Eragrostis tef,"cereals & pseudocereals, materials",0.0,99.4,solo lluvia (riego no confirmado),01-22,65,100.0,0.0,29.7,270.3,0,18.2,27.4,80.2,22.46,3.27,0.0,,,,,,10
+275,horseradish tree,Moringa oleifera,"forage/pasture, fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,99.4,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,359.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+273,orange,Citrus sinensis,fruits & nuts,0.0,99.4,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,411.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+276,American chestnut,Castanea dentata,"fruits & nuts, materials, forest/wood",0.0,99.4,solo lluvia (riego no confirmado),05-21,150,100.0,0.0,7.9,492.1,0,12.9,25.9,68.8,14.65,4.29,0.0,,,,,,10
+278,amla,Emblica officinalis,"forage/pasture, fruits & nuts, ornamentals/turf, medicinals & aromatic, environmental",0.0,99.4,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,661.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+272,soursop,Annona muricata,"fruits & nuts, vegetables, medicinals & aromatic, environmental",0.0,99.4,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,761.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+279,parsnip,Pastinaca sativa,vegetables,0.0,99.3,solo lluvia (riego no confirmado),06-02,80,100.0,0.0,1.4,298.6,0,13.1,24.6,70.2,12.9,3.74,0.0,,,,,,10
+280,zombi pea,Vigna vexillata,"pulses (grain legumes), roots/tubers, forage/pasture, vegetables, cover crop, environmental",0.0,99.2,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,611.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+282,loquat,Eriobotrya japonica,"fruits & nuts, medicinals & aromatic",0.0,99.1,solo lluvia (riego no confirmado),01-01,150,100.0,0.0,37.6,362.4,0,15.7,27.6,77.0,21.63,3.59,0.0,,,,,,10
+281,whitespot,Amaranthus cruentus,"cereals & pseudocereals, forage/pasture, vegetables",0.0,99.1,solo lluvia (riego no confirmado),01-29,30,100.0,0.0,15.2,484.8,0,18.5,27.1,79.9,22.62,3.33,0.0,,,,,,10
+283,black gram,Vigna mungo,"pulses (grain legumes), forage/pasture, medicinals & aromatic, cover crop, environmental",0.0,99.1,solo lluvia (riego no confirmado),01-22,60,100.0,0.0,28.8,501.2,0,18.2,27.1,80.5,22.33,3.3,0.0,,,,,,10
+284,sickle-leaved yellow-wood,Podocarpus falcatus,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,99.1,solo lluvia (riego no confirmado),01-02,365,100.0,0.0,37.5,762.5,0,12.5,28.0,72.1,19.93,3.61,0.0,,,,,,2
+285,Canistel,Pouteria campechiana,"fruits & nuts, vegetables",0.0,99.0,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,611.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+288,bachanta,Sorghum bicolor,"cereals & pseudocereals, forage/pasture, medicinals & aromatic",0.0,98.8,solo lluvia (riego no confirmado),01-22,90,100.0,0.0,32.0,268.0,0,17.9,27.6,79.3,22.19,3.35,0.0,,,,,,10
+287,common elder,Sambucus canadensis,"forage/pasture, fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,98.8,solo lluvia (riego no confirmado),06-02,90,100.0,0.0,1.6,298.4,0,13.1,24.6,70.2,13.18,3.74,0.0,,,,,,10
+286,peach,Prunus persica,"fruits & nuts, ornamentals/turf, environmental",0.0,98.8,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,709.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+289,mangrove,Avicennia marina,"forage/pasture, fruits & nuts, materials, forest/wood, environmental",0.0,98.7,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,959.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+292,quinoa,Chenopodium quinoa,"cereals & pseudocereals, forage/pasture, vegetables, medicinals & aromatic",0.0,98.6,solo lluvia (riego no confirmado),06-16,90,100.0,0.0,2.0,248.0,0,13.1,24.6,69.7,13.66,3.9,0.0,,,,,,10
+291,groundnut,Arachis hypogaea,"pulses (grain legumes), vegetables, materials, medicinals & aromatic",0.0,98.6,solo lluvia (riego no confirmado),01-22,90,100.0,0.0,32.0,368.0,0,17.9,27.6,79.3,22.19,3.35,0.0,,,,,,10
+290,Brussels sprouts,Brassica oleracea var. gemmifera,vegetables,0.0,98.6,solo lluvia (riego no confirmado),06-02,100,100.0,0.0,2.0,498.0,0,13.1,24.6,69.5,13.4,3.76,0.0,,,,,,10
+293,snake gourd,Trichosanthes cucumerina,"vegetables, medicinals & aromatic",0.0,98.5,solo lluvia (riego no confirmado),01-29,50,100.0,0.0,21.8,678.2,0,18.5,27.1,80.6,22.21,3.31,0.0,,,,,,10
+294,mangrove,Avicennia germinans,"fruits & nuts, materials, forest/wood",0.0,98.5,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,959.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+297,rain tree saman,Samanea saman,"forage/pasture, fruits & nuts, materials, ornamentals/turf, forest/wood, environmental",0.0,98.4,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,459.4,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+299,potherb fameflower,Talinum triangulare,"forage/pasture, vegetables, ornamentals/turf, medicinals & aromatic, weed",0.0,98.4,solo lluvia (riego no confirmado),01-29,40,100.0,0.0,21.5,478.5,0,18.5,27.1,80.0,22.8,3.42,0.0,,,,,,10
+295,cultivated yam,Dioscorea alata,"roots/tubers, environmental",0.0,98.4,solo lluvia (riego no confirmado),01-01,220,100.0,0.0,40.7,659.3,0,13.3,27.6,74.7,18.76,3.82,0.0,,,,,,10
+298,fey dayiti,Thespesia populnea,"forage/pasture, vegetables, materials, ornamentals/turf, medicinals & aromatic, environmental",0.0,98.4,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,738.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+296,one one,Heritiera littoralis,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,98.4,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+301,mangrove,Ceriops tagal,"fruits & nuts, materials, forest/wood",0.0,98.4,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+300,giant taro,Alocasia macrorrhizos,vegetables,0.0,98.4,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+302,bitter gourd,Momordica charantia,"fruits & nuts, vegetables, ornamentals/turf, environmental",0.0,98.3,solo lluvia (riego no confirmado),01-29,50,100.0,0.0,21.8,978.2,0,18.5,27.1,80.6,22.21,3.31,0.0,,,,,,10
+303,moru oak,Vitex keniensis,"fruits & nuts, ornamentals/turf, forest/wood",0.0,98.3,solo lluvia (riego no confirmado),01-02,365,100.0,0.0,37.5,1462.5,0,12.5,28.0,72.1,19.93,3.61,0.0,,,,,,2
+305,langsat,Lansium domesticum,"fruits & nuts, medicinals & aromatic",0.0,98.1,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,959.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+304,rambutan,Nephelium lappaceum,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,98.1,solo lluvia (riego no confirmado),01-01,170,100.0,0.0,38.9,1361.1,0,15.3,27.6,76.5,20.65,3.67,0.0,,,,,,10
+309,chaya,Cnidoscolus chayamansa,"vegetables, medicinals & aromatic",0.0,98.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+306,jack fruit,Artocarpus heterophyllus,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,98.0,solo lluvia (riego no confirmado),01-01,210,100.0,0.0,40.5,659.5,0,13.3,27.6,75.0,19.11,3.81,0.0,,,,,,10
+308,Tahiti lime,Citrus latifolia,fruits & nuts,0.0,98.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,688.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+307,Brazil nut,Bertholletia excelsa,"fruits & nuts, forest/wood",0.0,98.0,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+310,goosefoot,Chenopodium album ssp. album,"forage/pasture, vegetables, materials",0.0,97.8,solo lluvia (riego no confirmado),05-25,120,100.0,0.0,3.4,296.6,0,12.8,24.8,71.2,13.83,4.07,0.0,,,,,,10
+311,lamb's-quarters,Chenopodium album,"vegetables, medicinals & aromatic, weed",0.0,97.8,solo lluvia (riego no confirmado),05-25,120,100.0,0.0,3.4,296.6,0,12.8,24.8,71.2,13.83,4.07,0.0,,,,,,10
+313,cocoa,Theobroma cacao,"fruits & nuts, medicinals & aromatic",0.0,97.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,861.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+312,taro,Colocasia esculenta,"roots/tubers, vegetables, ornamentals/turf",0.0,97.6,solo lluvia (riego no confirmado),01-01,180,100.0,0.0,38.9,961.1,0,15.3,27.6,76.2,20.1,3.71,0.0,,,,,,10
+315,marula,Sclerocarya birrea ssp. caffra,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,97.4,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+314,African nut tree,Ricinodendron heudelotii,"vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,97.4,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+319,bard vetch,Vicia monantha,"pulses (grain legumes), forage/pasture",0.0,97.1,solo lluvia (riego no confirmado),06-16,90,100.0,0.0,2.0,348.0,0,13.1,24.6,69.7,13.66,3.9,0.0,,,,,,10
+318,red current,Ribes rubrum,"fruits & nuts, medicinals & aromatic",0.0,97.1,solo lluvia (riego no confirmado),06-02,150,100.0,0.0,8.0,492.0,0,13.1,24.7,69.3,15.59,3.82,0.0,,,,,,10
+316,ambarella,Spondias cytherea,"fruits & nuts, medicinals & aromatic",0.0,97.1,solo lluvia (riego no confirmado),01-07,120,100.0,0.0,20.6,579.4,0,17.0,28.2,75.8,23.71,3.7,0.0,,,,,,10
+317,Kohlrabi,Brassica oleracea var. gongyloides,vegetables,0.0,97.1,solo lluvia (riego no confirmado),06-16,50,100.0,0.0,0.9,699.1,0,13.1,23.9,71.4,11.8,3.82,0.0,,,,,,10
+320,blue lupine,Lupinus angustifolius,"pulses (grain legumes), forage/pasture, medicinals & aromatic",0.0,97.0,solo lluvia (riego no confirmado),05-25,100,100.0,0.0,2.9,347.1,0,13.1,24.8,71.7,13.31,3.99,0.0,,,,,,10
+324,karsatta (Konsogna),Dobera glabra,"forage/pasture, fruits & nuts, materials, ornamentals/turf, forest/wood",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,38.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+329,borasusspalm,Borassus aethiopum,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+326,Virginia strawberry,Fragaria virginiana,fruits & nuts,0.0,96.9,solo lluvia (riego no confirmado),05-25,120,100.0,0.0,3.4,396.6,0,12.8,24.8,71.2,13.83,4.07,0.0,,,,,,10
+327,wild date palm,Phoenix reclinata,"forage/pasture, fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+325,Chilean strawberry,Fragaria chiloensis,fruits & nuts,0.0,96.9,solo lluvia (riego no confirmado),05-25,120,100.0,0.0,3.4,496.6,0,12.8,24.8,71.2,13.83,4.07,0.0,,,,,,10
+328,groenklapper,Strychnos spinosa,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic, forest/wood",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+322,orange mangrove,Bruguiera gymnorrhiza,"fruits & nuts, vegetables, materials, forest/wood, environmental",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+321,mangosteen,Garcinia mangostana,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,1038.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+323,Borojó,Borojoa patinoi,"fruits & nuts, medicinals & aromatic",0.0,96.9,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,2438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+330,firefly mangrove,Sonneratia caseolaris,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,96.8,solo lluvia (riego no confirmado),01-01,330,100.0,0.0,50.7,949.3,0,12.9,27.6,72.6,18.41,3.97,0.0,,,,,,10
+331,mamoncillo,Melicoccus bijugatus,fruits & nuts,0.0,96.7,solo lluvia (riego no confirmado),01-07,120,100.0,0.0,20.6,479.4,0,17.0,28.2,75.8,23.71,3.7,0.0,,,,,,10
+332,red mombin,Spondias purpurea,fruits & nuts,0.0,96.7,solo lluvia (riego no confirmado),01-07,120,100.0,0.0,20.6,579.4,0,17.0,28.2,75.8,23.71,3.7,0.0,,,,,,10
+333,banana passion,Passiflora mollissima,"fruits & nuts, ornamentals/turf, weed",0.0,96.4,solo lluvia (riego no confirmado),05-14,180,100.0,0.0,4.0,696.0,0,12.5,25.6,68.5,16.96,3.79,0.0,,,,,,10
+334,algarroba,Prosopis juliflora,"forage/pasture, fruits & nuts, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,96.3,solo lluvia (riego no confirmado),01-07,120,100.0,0.0,20.6,129.4,0,17.0,28.2,75.8,23.71,3.7,0.0,,,,,,10
+335,Chinese gooseberry,Actinidia chinensis,fruits & nuts,0.0,96.2,solo lluvia (riego no confirmado),01-07,210,100.0,0.0,22.4,677.6,0,13.1,28.2,73.4,19.53,3.63,0.0,,,,,,10
+342,violet tree,Securidaca longependunculata,"vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,96.1,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+341,bitterleaf,Vernonia amygdalina,"forage/pasture, vegetables, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,96.1,solo lluvia (riego no confirmado),01-01,365,100.0,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+338,ilama,Annona diversifolia,fruits & nuts,0.0,96.1,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,609.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+336,Malabar spinach,Basella alba,vegetables,0.0,96.1,solo lluvia (riego no confirmado),01-14,55,100.0,0.0,16.9,683.1,0,17.9,28.2,76.9,24.6,3.87,0.0,,,,,,10
+337,Malabar spinach,Basella rubra,"vegetables, ornamentals/turf",0.0,96.1,solo lluvia (riego no confirmado),01-14,55,100.0,0.0,16.9,683.1,0,17.9,28.2,76.9,24.6,3.87,0.0,,,,,,10
+339,male bamboo,Dendrocalamus strictus,"vegetables, materials",0.0,96.1,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,1159.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+340,jatobá,Hymenaea courbaril,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,96.1,solo lluvia (riego no confirmado),01-01,240,100.0,0.0,40.9,1159.1,0,12.9,27.6,74.0,18.35,3.88,0.0,,,,,,10
+344,fonio,Digitaria exilis,cereals & pseudocereals,0.0,95.9,solo lluvia (riego no confirmado),01-22,90,100.0,0.0,32.0,368.0,0,17.9,27.6,79.3,22.19,3.35,0.0,,,,,,10
+343,cherry guava,Psidium cattleianum,"fruits & nuts, ornamentals/turf",0.0,95.9,solo lluvia (riego no confirmado),01-07,150,100.0,0.0,21.5,638.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+345,jejeba,Olea africana,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,95.8,solo lluvia (riego no confirmado),01-07,120,100.0,0.0,20.6,279.4,0,17.0,28.2,75.8,23.71,3.7,0.0,,,,,,10
+346,smooth loofah,Luffa cylindrica,"vegetables, materials",0.0,95.6,solo lluvia (riego no confirmado),01-07,70,100.0,0.0,18.0,282.0,0,17.9,28.2,76.5,24.62,3.85,0.0,,,,,,10
+347,sandalwood,Santalum album,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,95.6,solo lluvia (riego no confirmado),01-07,150,100.0,0.0,21.5,428.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+348,mandarin,Citrus reticulata,fruits & nuts,0.0,95.2,solo lluvia (riego no confirmado),01-07,60,100.0,0.0,16.2,283.8,0,17.9,28.2,76.4,24.76,3.93,0.0,,,,,,10
+349,Malay apple,Syzygium malaccense,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,95.1,solo lluvia (riego no confirmado),01-07,120,100.0,0.0,20.6,979.4,0,17.0,28.2,75.8,23.71,3.7,0.0,,,,,,10
+350,watercress,Nasturtium officinale,"vegetables, medicinals & aromatic",0.0,95.0,solo lluvia (riego no confirmado),06-09,40,100.0,0.0,0.2,299.8,0,11.9,22.7,70.7,14.13,4.17,0.0,,,,,,10
+351,citron,Citrus medica,"fruits & nuts, medicinals & aromatic",0.0,94.5,solo lluvia (riego no confirmado),01-07,210,100.0,0.0,22.4,777.6,0,13.1,28.2,73.4,19.53,3.63,0.0,,,,,,10
+352,Asian poke weed,Phytolacca acinosa,"vegetables, ornamentals/turf, medicinals & aromatic, environmental",0.0,94.2,solo lluvia (riego no confirmado),03-17,210,100.0,0.0,11.9,488.1,0,11.9,26.1,68.8,17.26,3.99,0.0,,,,,,10
+353,Machurian wild rice,Zizania latifolia,"vegetables, materials, medicinals & aromatic",0.0,93.4,solo lluvia (riego no confirmado),01-07,150,100.0,0.0,21.5,378.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+354,Sea grape,Coccoloba uvifera,"fruits & nuts, materials, ornamentals/turf, forest/wood, environmental",0.0,92.7,solo lluvia (riego no confirmado),01-05,240,100.0,0.0,31.3,368.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+355,mauka,Mirabilis expansa,"roots/tubers, vegetables",0.0,92.5,solo lluvia (riego no confirmado),05-10,210,100.0,0.0,12.9,487.1,0,13.0,24.9,70.1,16.18,3.8,0.0,,,,,,10
+356,Muraina grass,Ischaemum rugosum,"cereals & pseudocereals, forage/pasture, weed",0.0,92.2,solo lluvia (riego no confirmado),01-05,175,97.7,0.0,30.7,969.3,0,15.6,28.7,75.9,19.28,3.73,0.0,,,,,,10
+357,Brazil eugenia,Eugenia dombeyi,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,91.7,solo lluvia (riego no confirmado),01-07,210,100.0,0.0,22.4,777.6,0,13.1,28.2,73.4,19.53,3.63,0.0,,,,,,10
+358,calabur tree,Muntingia calabura,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,91.4,solo lluvia (riego no confirmado),01-05,180,97.1,0.0,30.7,969.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+359,cupuassu,Theobroma grandiflorum,"fruits & nuts, environmental",0.0,91.4,solo lluvia (riego no confirmado),01-05,180,97.1,0.0,30.7,1469.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+360,sweet granadilla,Passiflora ligularis,fruits & nuts,0.0,91.2,solo lluvia (riego no confirmado),01-07,150,100.0,0.0,21.5,628.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+361,Guinea grains,Aframomum melegueta,"fruits & nuts, medicinals & aromatic",0.0,90.8,solo lluvia (riego no confirmado),01-05,270,99.6,0.0,32.8,967.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+362,blimbi,Averrhoa bilimbi,"fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,89.8,solo lluvia (riego no confirmado),01-07,140,94.8,0.0,21.5,678.5,0,16.2,28.2,75.1,23.01,3.65,0.0,,,,,,10
+366,Kuteera-Gum,Acacia leucophloea,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,89.7,solo lluvia (riego no confirmado),01-05,180,96.5,0.0,30.7,569.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+365,Tropical almond,Terminalia catappa,"fruits & nuts, materials, ornamentals/turf, forest/wood, environmental",0.0,89.7,solo lluvia (riego no confirmado),01-05,300,98.6,0.0,34.3,665.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+363,caimito,Chrysophyllum cainito,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,89.7,solo lluvia (riego no confirmado),01-05,180,96.5,0.0,30.7,769.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+367,maní forrajero,Arachis pintoi,"pulses (grain legumes), forage/pasture, ornamentals/turf",0.0,89.7,solo lluvia (riego no confirmado),01-05,180,96.5,0.0,30.7,869.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+364,yellow granadilla,Passiflora laurifolia,fruits & nuts,0.0,89.7,solo lluvia (riego no confirmado),01-05,180,96.5,0.0,30.7,969.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+368,calamondin,Citrus madurensis,"fruits & nuts, materials, environmental",0.0,89.6,solo lluvia (riego no confirmado),01-05,210,95.4,0.0,30.7,969.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+369,pineapple,Ananas comosus,fruits & nuts,0.0,89.3,solo lluvia (riego no confirmado),01-12,348,98.1,0.0,48.6,501.4,0,14.9,28.7,73.8,18.78,4.04,0.0,,,,,,10
+370,coffee senna,Cassia occidentalis,"fruits & nuts, ornamentals/turf, environmental",0.0,88.8,solo lluvia (riego no confirmado),01-05,210,95.1,0.0,30.7,609.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+371,salsify,Tragopogon porrifolius,vegetables,0.0,88.7,solo lluvia (riego no confirmado),06-04,120,100.0,0.0,1.1,398.9,0,12.5,24.0,68.7,15.72,3.89,0.0,,,,,,10
+372,rattlepod,Crotalaria pallida,"forage/pasture, vegetables, environmental",0.0,88.6,solo lluvia (riego no confirmado),01-05,180,96.1,0.0,30.7,819.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+373,turmeric,Curcuma longa,"roots/tubers, medicinals & aromatic",0.0,88.5,solo lluvia (riego no confirmado),01-01,270,100.0,0.0,44.9,755.1,0,12.9,27.6,73.3,17.98,3.89,0.0,,,,,,10
+374,roselle,Hibiscus sabdariffa var. sabdariffa,"forage/pasture, fruits & nuts, vegetables, medicinals & aromatic",0.0,88.0,solo lluvia (riego no confirmado),01-04,90,93.8,0.0,29.7,470.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+375,Brazil cherry,Eugenia uniflora,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,87.4,solo lluvia (riego no confirmado),01-05,300,98.3,0.0,34.3,665.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+377,Halls Creek wattle,Acacia cowleana,"fruits & nuts, forest/wood, environmental, weed",0.0,87.2,solo lluvia (riego no confirmado),01-18,75,94.4,0.0,27.7,172.3,0,19.4,28.8,78.7,23.67,3.82,0.0,,,,,,10
+376,moth bean,Vigna aconitifolia,"pulses (grain legumes), forage/pasture, vegetables, environmental",0.0,87.2,solo lluvia (riego no confirmado),01-25,60,95.5,0.0,20.1,379.9,0,20.2,28.8,78.6,24.09,3.86,0.0,,,,,,10
+378,papaya,Carica papaya,"fruits & nuts, medicinals & aromatic",0.0,86.9,solo lluvia (riego no confirmado),01-12,348,97.7,0.0,48.6,951.4,0,14.9,28.7,73.8,18.78,4.04,0.0,,,,,,10
+379,wax gourd,Benincasa hispida,fruits & nuts,0.0,86.8,solo lluvia (riego no confirmado),01-18,80,93.8,0.0,28.9,271.1,0,19.2,28.8,78.7,23.58,3.82,0.0,,,,,,10
+380,pomegranate,Punica granatum,"fruits & nuts, medicinals & aromatic",0.0,86.5,solo lluvia (riego no confirmado),01-05,180,91.0,0.0,30.7,369.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+381,gum arabic,Acacia senegal,"pulses (grain legumes), forage/pasture, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,85.9,solo lluvia (riego no confirmado),01-25,60,95.0,0.0,20.1,179.9,0,20.2,28.8,78.6,24.09,3.86,0.0,,,,,,10
+382,menteng,Baccaurea racemosa,"fruits & nuts, materials, ornamentals/turf",0.0,85.4,solo lluvia (riego no confirmado),01-01,365,89.6,0.0,62.0,1438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+383,ngali nut,Canarium indicum,"fruits & nuts, ornamentals/turf, forest/wood",0.0,85.1,solo lluvia (riego no confirmado),01-05,240,92.8,0.0,31.3,1168.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+384,wanza,Cordia africana,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,84.8,solo lluvia (riego no confirmado),01-04,120,88.6,0.0,33.2,466.8,0,17.0,28.8,78.4,22.85,3.88,0.0,,,,,,10
+385,thorny bamboo,Bambusa arundinacea,"forage/pasture, vegetables, materials, environmental",0.0,84.7,solo lluvia (riego no confirmado),01-05,300,91.8,0.0,34.3,665.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+386,custard apple,Annona reticulata,fruits & nuts,0.0,84.6,solo lluvia (riego no confirmado),01-05,210,89.8,0.0,30.7,569.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+387,mango,Mangifera indica,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,84.4,solo lluvia (riego no confirmado),01-07,150,88.4,0.0,21.5,278.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+388,canihua,Chenopodium pallidicaule,"pulses (grain legumes), medicinals & aromatic",0.0,84.0,solo lluvia (riego no confirmado),06-02,90,91.9,0.0,1.0,299.0,0,11.9,23.9,69.6,13.68,4.1,0.0,,,,,,10
+389,Governor's plum,Flacourtia indica,"forage/pasture, fruits & nuts, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,83.2,solo lluvia (riego no confirmado),01-05,270,91.3,0.0,32.8,467.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+390,black velevet,Dialium guineense,"fruits & nuts, vegetables, forest/wood, environmental",0.0,83.0,solo lluvia (riego no confirmado),01-01,365,87.8,0.0,62.0,738.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+391,guar bean,Cyamopsis tetragonoloba,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic",0.0,82.1,solo lluvia (riego no confirmado),01-04,90,87.6,0.0,29.7,370.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+392,hairy-fruited eggplant,Solanum ferox,"vegetables, medicinals & aromatic",0.0,82.1,solo lluvia (riego no confirmado),01-07,150,86.8,0.0,21.5,778.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+393,pearl millett,Pennisetum glaucum,cereals & pseudocereals,0.0,81.5,solo lluvia (riego no confirmado),01-25,60,88.5,0.0,20.1,179.9,0,20.2,28.8,78.6,24.09,3.86,0.0,,,,,,10
+394,poshte,Annona scleroderma,fruits & nuts,0.0,81.4,solo lluvia (riego no confirmado),01-05,240,87.6,0.0,31.3,2968.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+395,African yam bean,Sphenostylis stenocarpa,"pulses (grain legumes), roots/tubers, ornamentals/turf, medicinals & aromatic",0.0,81.2,solo lluvia (riego no confirmado),01-07,150,89.3,0.0,21.5,778.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+396,five corner,Averrhoa carambola,"fruits & nuts, materials, medicinals & aromatic",0.0,80.1,solo lluvia (riego no confirmado),01-05,240,84.9,0.0,31.3,568.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+397,durian,Durio zibethinus,"fruits & nuts, medicinals & aromatic",0.0,79.9,solo lluvia (riego no confirmado),01-05,270,89.6,0.0,32.8,1167.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+400,Egyptian lotus,Nelumbo nucifera,"roots/tubers, vegetables, materials, ornamentals/turf, medicinals & aromatic",0.0,79.8,solo lluvia (riego no confirmado),01-04,120,84.7,0.0,33.2,666.8,0,17.0,28.8,78.4,22.85,3.88,0.0,,,,,,10
+401,pilinut,Canarium ovatum,"fruits & nuts, materials, ornamentals/turf",0.0,79.8,solo lluvia (riego no confirmado),01-01,365,82.7,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+399,(<b>Both for nutmeg and mace</b>):-,Myristica fragrans,"fruits & nuts, materials, medicinals & aromatic, environmental",0.0,79.8,solo lluvia (riego no confirmado),01-01,365,82.7,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+398,Acacia Coral,Adenanthera pavonina,"forage/pasture, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,79.8,solo lluvia (riego no confirmado),01-01,365,82.7,0.0,62.0,1938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+402,citrus,Citrus sp.,"fruits & nuts, ornamentals/turf",0.0,79.7,solo lluvia (riego no confirmado),01-05,180,86.5,0.0,30.7,419.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+403,sugar apple,Annona squamosa,fruits & nuts,0.0,79.5,solo lluvia (riego no confirmado),01-05,210,86.3,0.0,30.7,539.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+404,mamey,Mammea americana,"fruits & nuts, medicinals & aromatic",0.0,79.1,solo lluvia (riego no confirmado),01-07,150,84.6,0.0,21.5,778.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+405,acerola,Malpighia glabra,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,78.9,solo lluvia (riego no confirmado),01-05,270,84.0,0.0,32.8,667.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+406,wampee,Clausena lansium,"fruits & nuts, ornamentals/turf, medicinals & aromatic",0.0,78.6,solo lluvia (riego no confirmado),01-05,300,88.5,0.0,34.3,965.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+407,large num-num,Carissa macrocarpa,"fruits & nuts, ornamentals/turf, environmental",0.0,78.5,solo lluvia (riego no confirmado),01-05,240,85.7,0.0,31.3,568.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+408,cow pea,Vigna unguiculata,"pulses (grain legumes), forage/pasture, vegetables, environmental",0.0,78.1,solo lluvia (riego no confirmado),01-25,30,88.9,0.0,9.3,290.7,0,20.4,28.8,78.2,25.02,3.96,0.0,,,,,,10
+409,mashua,Tropaeolum tuberosum,roots/tubers,0.0,77.6,solo lluvia (riego no confirmado),05-19,180,98.0,0.0,4.0,696.0,2,11.7,25.0,67.3,17.05,4.1,0.0,,,,,,10
+410,breadfruit,Artocarpus altilis,fruits & nuts,0.0,77.3,solo lluvia (riego no confirmado),01-05,300,97.0,0.0,34.3,965.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+411,phalsa,Grewia asiatica,fruits & nuts,0.0,77.3,solo lluvia (riego no confirmado),01-05,260,84.8,0.0,32.0,1218.0,0,14.9,28.7,74.0,17.59,3.91,0.0,,,,,,10
+412,broom-corn,Sorghum bicolor var. sweet,"cereals & pseudocereals, forage/pasture, materials, medicinals & aromatic",0.0,75.3,solo lluvia (riego no confirmado),01-04,90,79.7,0.0,29.7,270.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+413,honey-locust,Gleditsia triacanthos,"pulses (grain legumes), forage/pasture, materials, ornamentals/turf, forest/wood, environmental",0.0,74.9,solo lluvia (riego no confirmado),01-05,180,78.3,0.0,30.7,469.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+414,coconut,Cocos nucifera,"fruits & nuts, materials, forest/wood",0.0,74.8,solo lluvia (riego no confirmado),01-05,270,87.0,0.0,32.8,617.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+415,padauk,Pterocarpus indicus,"vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,74.8,solo lluvia (riego no confirmado),01-05,180,80.4,0.0,30.7,1469.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+416,Barbados flowerfence,Parkinsonia aculeata,"forage/pasture, fruits & nuts, ornamentals/turf, forest/wood, environmental, weed",0.0,74.6,solo lluvia (riego no confirmado),01-04,120,83.9,0.0,33.2,166.8,0,17.0,28.8,78.4,22.85,3.88,0.0,,,,,,10
+419,spelt wheat,Triticum spelta,"cereals & pseudocereals, forage/pasture",0.0,74.4,solo lluvia (riego no confirmado),06-09,120,97.5,0.0,0.6,299.4,2,11.9,25.0,67.7,15.23,4.25,0.0,,,,,,10
+417,sour orange,Citrus aurantium,"fruits & nuts, materials, medicinals & aromatic",0.0,74.4,solo lluvia (riego no confirmado),01-07,140,79.5,0.0,21.5,328.5,0,16.2,28.2,75.1,23.01,3.65,0.0,,,,,,10
+418,bataua,Jessenia bataua,"forage/pasture, fruits & nuts, materials",0.0,74.4,solo lluvia (riego no confirmado),01-01,365,81.7,0.0,62.0,1438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+420,mopane,Colophospermum mopane,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,73.7,solo lluvia (riego no confirmado),01-04,90,79.6,0.0,29.7,120.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+421,Pistachio nut,Pistacia vera,"fruits & nuts, materials, medicinals & aromatic",0.0,73.1,solo lluvia (riego no confirmado),01-07,150,78.1,0.0,21.5,228.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+422,rubber,Hevea brasiliensis,"forage/pasture, fruits & nuts, materials, forest/wood, environmental",0.0,71.3,solo lluvia (riego no confirmado),01-01,365,73.4,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+423,atemoya,Annona cherimola x Annona squamosa,fruits & nuts,0.0,71.2,solo lluvia (riego no confirmado),01-05,210,78.0,0.0,30.7,569.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+424,Abbo rubber tree,Ficus vogelii,"fruits & nuts, materials",0.0,71.2,solo lluvia (riego no confirmado),01-05,270,85.1,0.0,32.8,1467.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+426,Afrikaans rostvy,Ficus glumosa,"fruits & nuts, materials, forest/wood, environmental",0.0,71.1,solo lluvia (riego no confirmado),01-01,365,75.3,0.0,62.0,338.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+425,cohune palm,Attalea cohune,"fruits & nuts, vegetables, materials, ornamentals/turf",0.0,71.1,solo lluvia (riego no confirmado),01-01,365,75.3,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+427,yemane,Gmelina arborea,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,70.2,solo lluvia (riego no confirmado),01-05,240,85.6,0.0,31.3,718.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+429,false pickerelweed,Monochoria hastata,"forage/pasture, vegetables, ornamentals/turf, medicinals & aromatic, weed",0.0,70.2,solo lluvia (riego no confirmado),01-04,90,79.3,0.0,29.7,970.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+428,gourka,Garcinia dulcis,"fruits & nuts, materials, medicinals & aromatic",0.0,70.2,solo lluvia (riego no confirmado),01-05,240,85.6,0.0,31.3,1068.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+430,abata kola,Cola acuminata,"fruits & nuts, environmental",0.0,70.0,solo lluvia (riego no confirmado),01-07,150,83.0,0.0,21.5,678.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+431,Injet (Amargna),Capparis decidua,"fruits & nuts, forest/wood",0.0,69.3,solo lluvia (riego no confirmado),01-04,90,72.6,0.0,29.7,120.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+432,genipap,Genipa americana,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,66.6,solo lluvia (riego no confirmado),01-05,270,74.7,0.0,32.8,867.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+433,awl tree,Morinda citrifolia,"fruits & nuts, medicinals & aromatic, forest/wood, environmental",0.0,66.5,solo lluvia (riego no confirmado),01-01,365,68.9,0.0,62.0,638.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+437,Indian laurel fig,Ficus thonningii,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,66.3,solo lluvia (riego no confirmado),01-01,365,71.2,0.0,62.0,538.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+434,neka (Simbo),Abelmoschus manihot,"vegetables, ornamentals/turf, medicinals & aromatic",0.0,66.3,solo lluvia (riego no confirmado),01-01,365,71.2,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+436,euterpe palm,Euterpe oleracea,"fruits & nuts, vegetables, ornamentals/turf",0.0,66.3,solo lluvia (riego no confirmado),01-01,365,71.2,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+435,chempedak,Artocarpus integer,"forage/pasture, fruits & nuts, ornamentals/turf, forest/wood",0.0,66.3,solo lluvia (riego no confirmado),01-01,365,71.2,0.0,62.0,1188.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+438,African locust bean,Parkia biglobosa,"pulses (grain legumes), forage/pasture, medicinals & aromatic, forest/wood, environmental",0.0,64.9,solo lluvia (riego no confirmado),01-05,180,68.3,0.0,30.7,269.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+439,Guinea arrowroot,Calathea allouia,"roots/tubers, materials, medicinals & aromatic, environmental",0.0,64.4,solo lluvia (riego no confirmado),01-05,300,80.8,0.0,34.3,665.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+440,bael,Aegle marmelos,"fruits & nuts, medicinals & aromatic",0.0,63.9,solo lluvia (riego no confirmado),01-05,180,66.6,0.0,30.7,469.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+441,dom (Sudan),Hyphaene thebaica,"forage/pasture, fruits & nuts, vegetables, materials, medicinals & aromatic, forest/wood, environmental",0.0,63.8,solo lluvia (riego no confirmado),01-05,240,69.6,0.0,31.3,68.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+442,pacay,Inga feuillei,"forage/pasture, fruits & nuts, ornamentals/turf, forest/wood, environmental",0.0,63.5,solo lluvia (riego no confirmado),01-05,210,84.0,0.0,30.7,969.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+443,Schilf,Phragmites australis,"forage/pasture, vegetables, materials, ornamentals/turf, medicinals & aromatic, environmental, weed",0.0,63.0,solo lluvia (riego no confirmado),01-07,150,65.9,0.0,21.5,278.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+444,date palm,Phoenix dactylifera,fruits & nuts,0.0,62.4,solo lluvia (riego no confirmado),01-01,365,64.2,0.0,62.0,38.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+445,Key lime,Citrus aurantifolia,"fruits & nuts, materials, medicinals & aromatic",0.0,61.3,solo lluvia (riego no confirmado),01-05,180,66.6,0.0,30.7,669.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+446,round kumquat,Fortunella japonica,"fruits & nuts, ornamentals/turf, medicinals & aromatic, environmental",0.0,61.0,solo lluvia (riego no confirmado),01-05,210,66.9,0.0,30.7,669.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+447,oval kumquat,Fortunella margarita,"fruits & nuts, ornamentals/turf, medicinals & aromatic, environmental",0.0,61.0,solo lluvia (riego no confirmado),01-05,210,66.9,0.0,30.7,669.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+448,dwarf kumquat,Fortunella hindsii,"fruits & nuts, medicinals & aromatic",0.0,61.0,solo lluvia (riego no confirmado),01-05,210,66.9,0.0,30.7,669.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+450,African rice,Oryza glaberrima,cereals & pseudocereals,0.0,59.7,solo lluvia (riego no confirmado),01-04,120,67.1,0.0,33.2,666.8,0,17.0,28.8,78.4,22.85,3.88,0.0,,,,,,10
+449,white yam,Dioscorea rotundata,roots/tubers,0.0,59.7,solo lluvia (riego no confirmado),01-05,180,66.5,0.0,30.7,769.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+451,Soncoya,Annona purpurea,"fruits & nuts, medicinals & aromatic",0.0,59.6,solo lluvia (riego no confirmado),01-01,365,65.4,0.0,62.0,638.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+452,ghogar tree,Garuga pinnata,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,58.9,solo lluvia (riego no confirmado),01-05,210,62.4,0.0,30.7,969.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+453,Java apple,Syzygium javanicum,"fruits & nuts, medicinals & aromatic, forest/wood",0.0,57.0,solo lluvia (riego no confirmado),01-05,270,70.9,0.0,32.8,1167.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+454,yam,Dioscorea floribunda,roots/tubers,0.0,56.7,solo lluvia (riego no confirmado),01-05,200,64.4,0.0,30.7,569.3,0,15.4,28.7,75.5,18.3,3.81,0.0,,,,,,10
+455,Celosia,Celosia argentea,vegetables,0.0,56.2,solo lluvia (riego no confirmado),01-25,30,77.8,0.0,9.3,990.7,0,20.4,28.8,78.2,25.02,3.96,0.0,,,,,,10
+456,Alexandria laurel,Calophyllum inophyllum,"fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,55.4,solo lluvia (riego no confirmado),01-01,365,57.1,0.0,62.0,688.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+457,sapote,Pouteria sapota,"fruits & nuts, forest/wood",0.0,55.3,solo lluvia (riego no confirmado),01-01,365,58.5,0.0,62.0,738.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+458,yam bean,Pachyrhizus tuberosus,roots/tubers,0.0,55.2,solo lluvia (riego no confirmado),01-05,180,62.8,0.0,30.7,609.3,0,15.6,28.7,75.8,19.01,3.73,0.0,,,,,,10
+459,African baobab,Adansonia digitata,"fruits & nuts, environmental",0.0,54.5,solo lluvia (riego no confirmado),01-05,210,61.3,0.0,30.7,219.3,0,15.2,28.7,75.2,18.01,3.83,0.0,,,,,,10
+460,yeheb nut,Cordeauxia edulis,"forage/pasture, fruits & nuts, forest/wood",0.0,54.2,solo lluvia (riego no confirmado),01-18,40,73.0,0.0,13.5,86.5,0,19.5,28.8,78.6,24.32,3.95,0.0,,,,,,10
+461,bignay,Antidesma bunius,"fruits & nuts, ornamentals/turf",0.0,53.5,solo lluvia (riego no confirmado),01-05,240,68.9,0.0,31.3,1068.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+462,Ecuador laurel,Cordia alliodora,"fruits & nuts, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,52.6,solo lluvia (riego no confirmado),01-05,240,64.2,0.0,31.3,718.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+463,African bitter yam,Dioscorea dumetorum,roots/tubers,0.0,52.1,solo lluvia (riego no confirmado),01-05,240,61.3,0.0,31.3,668.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+466,Indian lac tree,Schleichera oleosa,"fruits & nuts, vegetables, materials, forest/wood",0.0,49.9,solo lluvia (riego no confirmado),01-05,270,54.8,0.0,32.8,717.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+464,mangrove,Avicennia officinalis,"fruits & nuts, forest/wood",0.0,49.9,solo lluvia (riego no confirmado),01-05,270,59.6,0.0,32.8,767.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+465,barbasco,Dioscorea composita,roots/tubers,0.0,49.9,solo lluvia (riego no confirmado),01-05,270,59.6,0.0,32.8,967.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+467,scarlet wisteria tree,Sesbania grandiflora,"forage/pasture, fruits & nuts, vegetables, materials, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,49.8,solo lluvia (riego no confirmado),01-05,270,62.0,0.0,32.8,767.2,0,14.9,28.7,74.1,17.7,3.94,0.0,,,,,,10
+468,gomor,Capparis tomentosa,"forage/pasture, fruits & nuts, medicinals & aromatic, environmental",0.0,49.7,solo lluvia (riego no confirmado),01-01,365,53.4,0.0,62.0,238.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+472,khash,Stereospermum kunthianum,"forage/pasture, fruits & nuts, materials, ornamentals/turf, medicinals & aromatic, forest/wood",0.0,49.4,solo lluvia (riego no confirmado),01-01,365,56.7,0.0,62.0,288.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+470,buriti palm,Mauritia flexuosa,"fruits & nuts, materials, environmental",0.0,49.4,solo lluvia (riego no confirmado),01-01,365,56.7,0.0,62.0,1038.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+471,bwa blan,Simarouba glauca,"fruits & nuts, materials, medicinals & aromatic, forest/wood, environmental",0.0,49.4,solo lluvia (riego no confirmado),01-01,365,56.7,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+469,arazá,Eugenia stipitata,"fruits & nuts, ornamentals/turf, environmental",0.0,49.4,solo lluvia (riego no confirmado),01-01,365,56.7,0.0,62.0,1438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+473,Nonda plums,Parinari nonda,"fruits & nuts, forest/wood, environmental",0.0,48.8,solo lluvia (riego no confirmado),01-05,300,57.1,0.0,34.3,665.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+474,Arrowroot,Maranta arundinacea,"roots/tubers, materials, medicinals & aromatic",0.0,47.7,solo lluvia (riego no confirmado),01-05,300,64.1,0.0,34.3,665.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10
+476,bdellium,Commiphora africana,"forage/pasture, vegetables, medicinals & aromatic, environmental",0.0,39.6,solo lluvia (riego no confirmado),01-01,365,45.4,0.0,62.0,188.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+475,food inga,Inga edulis,"forage/pasture, fruits & nuts, ornamentals/turf, medicinals & aromatic, forest/wood, environmental",0.0,39.6,solo lluvia (riego no confirmado),01-01,365,45.4,0.0,62.0,578.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+477,pulasan,Nephelium mutabile,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,39.3,solo lluvia (riego no confirmado),01-05,170,47.4,0.0,30.7,1319.3,0,15.6,28.7,76.1,19.47,3.73,0.0,,,,,,10
+478,akee,Blighia sapida,fruits & nuts,0.0,37.4,solo lluvia (riego no confirmado),01-07,150,53.7,0.0,21.5,678.5,0,15.3,28.2,74.3,22.47,3.61,0.0,,,,,,10
+479,Liberian coffee,Coffea liberica,"fruits & nuts, environmental",0.0,36.8,solo lluvia (riego no confirmado),01-05,240,52.2,0.0,31.3,1068.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+480,fancy yam,Dioscorea esculenta,"roots/tubers, forage/pasture, environmental",0.0,33.3,solo lluvia (riego no confirmado),01-05,200,40.3,0.0,30.7,569.3,0,15.4,28.7,75.5,18.3,3.81,0.0,,,,,,10
+481,galangal,Alpinia galanga,"vegetables, medicinals & aromatic",0.0,33.1,solo lluvia (riego no confirmado),01-04,90,44.8,0.0,29.7,1970.3,0,19.4,28.8,78.7,23.78,3.88,0.0,,,,,,10
+482,rambai,Baccaurea motleyana,"fruits & nuts, materials, ornamentals/turf, environmental",0.0,33.0,solo lluvia (riego no confirmado),01-01,365,37.8,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+483,lutqua,Baccaurea ramiflora,"fruits & nuts, ornamentals/turf, forest/wood, environmental",0.0,33.0,solo lluvia (riego no confirmado),01-01,365,37.8,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+484,ipecac,Cephaelis ipecacuanha,roots/tubers,0.0,30.4,solo lluvia (riego no confirmado),01-05,240,53.4,0.0,31.3,1068.7,0,14.9,28.7,74.5,17.59,3.87,0.0,,,,,,10
+485,sago palm,Metroxylon sagu,"vegetables, forest/wood",0.0,28.3,solo lluvia (riego no confirmado),01-01,365,32.4,0.0,62.0,2038.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+486,green longan,Dimocarpus longan var. malesianus,fruits & nuts,0.0,28.3,solo lluvia (riego no confirmado),01-01,365,32.4,0.0,62.0,2438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+487,costela de Adão,Monstera deliciosa,"fruits & nuts, ornamentals/turf",0.0,19.8,solo lluvia (riego no confirmado),01-01,365,22.7,0.0,62.0,938.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+488,lovage,Levisticum officinale,"roots/tubers, medicinals & aromatic",0.0,18.2,solo lluvia (riego no confirmado),05-26,140,53.0,0.0,3.6,496.4,47,11.9,25.0,67.8,15.64,4.18,0.0,,,,,,10
+489,nypa palm,Nypa fruticans,"fruits & nuts, environmental",0.0,4.5,solo lluvia (riego no confirmado),01-01,365,9.0,0.0,62.0,1438.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+490,pepper grass,Lepidium meyenii,roots/tubers,0.0,2.9,solo lluvia (riego no confirmado),05-12,180,19.0,0.0,3.8,496.2,81,11.7,25.0,67.2,16.82,4.09,0.0,,,,,,10
+491,African walnut,Coula edulis,"fruits & nuts, forest/wood",0.0,2.7,solo lluvia (riego no confirmado),01-01,365,5.4,0.0,62.0,738.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+492,bush mango,Irvingia gabonensis,"forage/pasture, fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,2.7,solo lluvia (riego no confirmado),01-01,365,5.4,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+493,aidan tree,Tetrapleura tetraptera,"fruits & nuts, materials, medicinals & aromatic, forest/wood",0.0,2.7,solo lluvia (riego no confirmado),01-01,365,5.4,0.0,62.0,1138.0,0,12.9,27.9,72.3,18.75,4.0,0.0,,,,,,2
+494,erima,Octomeles sumatrana,"vegetables, materials, forest/wood",0.0,1.8,solo lluvia (riego no confirmado),01-05,300,9.4,0.0,34.3,1965.7,0,14.9,28.7,74.1,18.04,3.97,0.0,,,,,,10

@@ -1,0 +1,1 @@
+{"title": "NASA/POWER Source Native Resolution Daily Data", "api": {"version": "v2.10.3", "name": "POWER Daily API"}, "sources": ["MERRA2", "SYN1DEG", "POWER"], "fill_value": -999.0, "time_standard": "UTC", "start": "20150101", "end": "20241231"}
