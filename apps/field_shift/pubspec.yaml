@@ -16,8 +16,6 @@ dependencies:
   field_imagery: any
   field_storage: any
   field_compute: any
-  field_rotations: any
-  geolocator_android: ^5.2.1
   http: ^1.6.0
   path_provider: ^2.1.6
   path: ^1.9.1
