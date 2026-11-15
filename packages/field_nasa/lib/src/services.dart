@@ -11,11 +11,11 @@ class GibsLayer {
       'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/$id/default/${date.toIso8601String().substring(0, 10)}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg';
 }
 
-SceneCatalog landsatCatalog(http.Client client) => StacCatalog(
+SceneCatalog landsatCatalog(http.Client client, {Uri? endpoint}) => StacCatalog(
   client: client,
-  endpoint: Uri.parse(
-    'https://planetarycomputer.microsoft.com/api/stac/v1/search',
-  ),
+  endpoint:
+      endpoint ??
+      Uri.parse('https://planetarycomputer.microsoft.com/api/stac/v1/search'),
   collection: 'landsat-c2-l2',
   provider: 'USGS/NASA · Planetary Computer',
 );
@@ -55,7 +55,8 @@ abstract interface class ClimateProvider {
 
 class NasaPower implements ClimateProvider {
   final http.Client client;
-  NasaPower(this.client);
+  final Uri? endpoint;
+  NasaPower(this.client, {this.endpoint});
   @override
   Future<ClimateSeries> daily(
     GeoPoint point,
@@ -67,16 +68,21 @@ class NasaPower implements ClimateProvider {
     if (end.isBefore(start) || end.difference(start).inDays > 366) {
       throw ArgumentError('Selecciona hasta un año de datos climáticos.');
     }
-    final uri = Uri.https('power.larc.nasa.gov', '/api/temporal/daily/point', {
-      'parameters': 'T2M,PRECTOTCORR,RH2M,ALLSKY_SFC_SW_DWN',
-      'community': 'AG',
-      'longitude': '${point.longitude}',
-      'latitude': '${point.latitude}',
-      'start': date(start),
-      'end': date(end),
-      'format': 'JSON',
-      'time-standard': 'UTC',
-    });
+    final uri =
+        (endpoint ??
+                Uri.https('power.larc.nasa.gov', '/api/temporal/daily/point'))
+            .replace(
+              queryParameters: {
+                'parameters': 'T2M,PRECTOTCORR,RH2M,ALLSKY_SFC_SW_DWN',
+                'community': 'AG',
+                'longitude': '${point.longitude}',
+                'latitude': '${point.latitude}',
+                'start': date(start),
+                'end': date(end),
+                'format': 'JSON',
+                'time-standard': 'UTC',
+              },
+            );
     final response = await client.get(uri).timeout(const Duration(seconds: 60));
     if (response.statusCode != 200) {
       throw http.ClientException(

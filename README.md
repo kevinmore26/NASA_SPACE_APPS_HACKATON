@@ -20,6 +20,7 @@ Para empaquetar una compilación de distribución, ejecuta `.\tools\build_window
 ## Usar y verificar
 
 - [Guía de uso en Windows](docs/USO_WINDOWS.md) con el flujo de mapa, análisis y planificador.
+- [Publicar la app web](docs/WEB.md) con la interfaz Flutter y el servicio de procesamiento.
 - [Estado del proyecto](docs/PROJECT_STATUS.md) con las reglas del piloto, los cambios y los resultados de verificación.
 - [Contratos y método científico](docs/MODULE_CONTRACTS.md) y [decisiones de arquitectura](docs/DECISIONS.md).
 - [Cobertura de V1](docs/REQUIREMENTS_TRACEABILITY.md) con la evidencia histórica del proyecto.

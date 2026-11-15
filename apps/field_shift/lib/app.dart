@@ -10,7 +10,7 @@ import 'presentation/workspace_widgets.dart';
 class FieldShiftApp extends StatelessWidget {
   final FieldController model;
   final http.Client tiles;
-  final String dataDirectory;
+  final String? dataDirectory;
 
   const FieldShiftApp({
     super.key,

@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:field_core/field_core.dart';
 import 'package:field_maps/field_maps.dart';
 import 'package:field_nasa/field_nasa.dart';
@@ -9,6 +7,7 @@ import 'package:http/http.dart' as http;
 import '../application/field_controller.dart';
 import 'analysis_page.dart';
 import 'field_strings.dart';
+import 'raster_preview.dart';
 import 'workspace_widgets.dart';
 
 class MapWorkspace extends StatefulWidget {
@@ -35,7 +34,7 @@ class _MapWorkspaceState extends State<MapWorkspace> {
   FieldController get m => widget.model;
   FieldGeometry? _geometry;
   String? _resultPath;
-  Future<bool>? _preview;
+  Future<ImageProvider?>? _preview;
   bool _fitOnEntry = true;
 
   static const _roads = MapTiles(
@@ -85,15 +84,14 @@ class _MapWorkspaceState extends State<MapWorkspace> {
     final path = m.result?.previewPath;
     if (path != _resultPath) {
       _resultPath = path;
-      _preview = path == null ? null : File(path).exists();
+      _preview = path == null ? null : loadRasterPreview(path);
     }
-    return FutureBuilder<bool>(
+    return FutureBuilder<ImageProvider?>(
       future: _preview,
       builder: (context, preview) {
-        final havePreview =
-            path != null &&
-            preview.connectionState == ConnectionState.done &&
-            preview.data == true;
+        final previewImage = preview.connectionState == ConnectionState.done
+            ? preview.data
+            : null;
         final map = Surface(
           padding: EdgeInsets.zero,
           child: FieldMap(
@@ -108,10 +106,10 @@ class _MapWorkspaceState extends State<MapWorkspace> {
                   )
                 : null,
             raster:
-                havePreview &&
+                previewImage != null &&
                     m.showRaster &&
                     !(widget.analyzing && m.showingWeather)
-                ? MapRaster(FileImage(File(path)), m.result!.bounds)
+                ? MapRaster(previewImage, m.result!.bounds)
                 : null,
             opacity: m.opacity,
             vertices: m.vertices,
@@ -136,7 +134,7 @@ class _MapWorkspaceState extends State<MapWorkspace> {
                     previewMissing:
                         path == null ||
                         (preview.connectionState == ConnectionState.done &&
-                            preview.data != true),
+                            previewImage == null),
                     fitResult: () {
                       final result = m.result;
                       if (result != null) _map.fit(result.bounds);

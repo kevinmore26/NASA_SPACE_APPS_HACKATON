@@ -16,7 +16,7 @@ import 'workspace_widgets.dart';
 class FieldScreen extends StatefulWidget {
   final FieldController model;
   final http.Client tiles;
-  final String dataDirectory;
+  final String? dataDirectory;
   const FieldScreen({
     super.key,
     required this.model,

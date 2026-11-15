@@ -8,7 +8,7 @@ import 'workspace_widgets.dart';
 
 class SettingsPage extends StatelessWidget {
   final FieldController model;
-  final String dataDirectory;
+  final String? dataDirectory;
   const SettingsPage(this.model, {super.key, required this.dataDirectory});
 
   @override
@@ -50,10 +50,15 @@ class SettingsPage extends StatelessWidget {
                 contentPadding: EdgeInsets.zero,
                 title: Text(context.t('Work offline', 'Trabajar sin internet')),
                 subtitle: Text(
-                  context.t(
-                    'Use saved fields, map tiles, and observations.',
-                    'Usa terrenos, mapas y observaciones guardados.',
-                  ),
+                  dataDirectory == null
+                      ? context.t(
+                          'Use saved fields and observations in the open tab.',
+                          'Usa terrenos y observaciones guardados en esta pestaña.',
+                        )
+                      : context.t(
+                          'Use saved fields, map tiles, and observations.',
+                          'Usa terrenos, mapas y observaciones guardados.',
+                        ),
                 ),
                 value: model.offline,
                 onChanged: model.isBusy
@@ -99,19 +104,26 @@ class SettingsPage extends StatelessWidget {
               ),
               const SizedBox(height: 7),
               Text(
-                context.t(
-                  'Map cache: 128 MB. Image cache: 512 MB. Saved measurements stay in the field history.',
-                  'Caché de mapas: 128 MB. Caché de imágenes: 512 MB. Las mediciones siguen guardadas en el historial.',
-                ),
+                dataDirectory == null
+                    ? context.t(
+                        'Fields and observations are saved in this browser.',
+                        'Los terrenos y las observaciones se guardan en este navegador.',
+                      )
+                    : context.t(
+                        'Map cache: 128 MB. Image cache: 512 MB. Saved measurements stay in the field history.',
+                        'Caché de mapas: 128 MB. Caché de imágenes: 512 MB. Las mediciones siguen guardadas en el historial.',
+                      ),
               ),
-              const SizedBox(height: 8),
-              CopyValue(
-                dataDirectory,
-                label: context.t(
-                  'Copy data folder path',
-                  'Copiar ruta de datos',
+              if (dataDirectory case final path?) ...[
+                const SizedBox(height: 8),
+                CopyValue(
+                  path,
+                  label: context.t(
+                    'Copy data folder path',
+                    'Copiar ruta de datos',
+                  ),
                 ),
-              ),
+              ],
             ],
           ),
         ),

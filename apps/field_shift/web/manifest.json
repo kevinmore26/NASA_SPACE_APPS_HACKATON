@@ -1,12 +1,12 @@
 {
-    "name": "field_shift",
-    "short_name": "field_shift",
+    "name": "NASA Field Shift",
+    "short_name": "Field Shift",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
+    "background_color": "#F1F0E9",
+    "theme_color": "#142F26",
+    "description": "Explore satellite observations and compare crop rotations.",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {
