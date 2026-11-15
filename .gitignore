@@ -11,6 +11,7 @@
 **/.pytest_cache/
 **/.venv/
 *.pyc
+/ml/data/power_cache/
 
 # Archivos privados y temporales
 .env

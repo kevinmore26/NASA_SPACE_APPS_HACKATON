@@ -1,4 +1,4 @@
-"""HTTP interface to the existing Field Shift raster worker and data providers."""
+"""HTTP interface to the Field Shift raster worker and data providers."""
 import base64
 import json
 import os
@@ -19,6 +19,8 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, FiniteFloat
+
+from .crop_suitability import CropSuitabilityRequest, evaluate_crops
 
 ROOT = Path(__file__).resolve().parents[2]
 WORKER = ROOT / 'packages/field_compute/worker/raster_worker.py'
@@ -178,6 +180,12 @@ def weather(
         'time-standard': 'UTC',
     })
     return upstream_json(f'{POWER}?{query}')
+
+
+@app.post('/api/crops/suitability')
+def crop_suitability(request: CropSuitabilityRequest):
+    with raster_slot():
+        return evaluate_crops(request)
 
 
 @app.post('/api/raster')

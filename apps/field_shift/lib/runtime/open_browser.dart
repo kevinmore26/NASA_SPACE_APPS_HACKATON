@@ -3,6 +3,7 @@ import 'package:field_nasa/field_nasa.dart';
 import 'package:http/http.dart' as http;
 
 import '../app.dart';
+import '../application/crop_suitability.dart';
 import '../application/field_controller.dart';
 import 'browser_store.dart';
 import 'remote_raster_processor.dart';
@@ -26,6 +27,10 @@ Future<FieldShiftApp> openFieldShift() async {
     ),
     climate: NasaPower(client, endpoint: api.resolve('/api/weather')),
     processor: processor,
+    cropSuitabilityClient: CropSuitabilityClient(
+      client,
+      api.resolve('/api/crops/suitability'),
+    ),
   );
   await model.initialize();
   processor.offline = model.offline;

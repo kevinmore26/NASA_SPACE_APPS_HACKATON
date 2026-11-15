@@ -33,6 +33,16 @@ Pop-Location
 
 [Publicar una carpeta compilada en Netlify](https://docs.netlify.com/manage/projects/add-new-project/)
 
+## Evaluación de cultivos
+
+**Planificador → Evaluar cultivos** consulta `POST /api/crops/suitability` en la API de Render. La solicitud lleva el centro del terreno guardado y, cuando existen, textura, drenaje y conductividad declarados. La respuesta guarda la ubicación consultada, el periodo histórico, las fuentes y hasta cinco cultivos en el navegador. El resultado sigue disponible sin conexión con los mismos datos del terreno.
+
+El motor de Guillermo (`ml/crop_recommender.py`, rama `guillermo`) usa un punto de NASA POWER Daily y las mejores ventanas históricas de 2015 a 2024. El cálculo toma la lluvia histórica y los datos de suelo disponibles. Si solo hay opciones al evaluar temperatura y suelo, se muestran con un aviso para revisar el agua disponible. El planificador presenta esos puntajes orientativos junto a la comparación de rotaciones del piloto.
+
+Para construir el contenedor, incorpora a `main` `ml/crop_recommender.py` y `ml/data/EcoCrop_DB.csv` de la rama de Guillermo. Docker instala pandas y requests con las demás dependencias del servicio. El mismo `FIELD_SHIFT_API_URL` del build conecta Flutter con el endpoint nuevo.
+
+Fuentes del motor y las categorías de suelo. [NASA POWER Daily API](https://power.larc.nasa.gov/docs/services/api/temporal/daily/) · [Base EcoCrop de la FAO, distribuida por OpenCLIM](https://github.com/OpenCLIM/ecocrop) · [Clases de textura de EcoCrop, tabla 2](https://edepot.wur.nl/709345).
+
 ## Actualizaciones
 
 Render puede actualizar la API desde la rama conectada. Para una nueva versión de la interfaz, vuelve a ejecutar el build y arrastra `build/web` a **Deploys** del mismo proyecto de Netlify. Comparte la URL del proyecto con el jurado.

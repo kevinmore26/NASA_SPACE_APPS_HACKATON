@@ -9,6 +9,7 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
 import '../app.dart';
+import '../application/crop_suitability.dart';
 import '../application/field_controller.dart';
 
 Future<FieldShiftApp> openFieldShift() async {
@@ -19,6 +20,7 @@ Future<FieldShiftApp> openFieldShift() async {
   );
   final tiles = CachedTileClient(Directory(p.join(support.path, 'tiles')));
   final client = http.Client();
+  const configuredApi = String.fromEnvironment('FIELD_SHIFT_API_URL');
   var executable = p.join(
     p.dirname(Platform.resolvedExecutable),
     'workers',
@@ -57,6 +59,12 @@ Future<FieldShiftApp> openFieldShift() async {
       arguments: arguments,
       outputDirectory: p.join(support.path, 'results'),
     ),
+    cropSuitabilityClient: configuredApi.isEmpty
+        ? null
+        : CropSuitabilityClient(
+            client,
+            Uri.parse(configuredApi).resolve('/api/crops/suitability'),
+          ),
   );
   await model.initialize();
   tiles.offline = model.offline;

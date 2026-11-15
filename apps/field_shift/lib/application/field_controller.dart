@@ -8,6 +8,7 @@ import 'package:field_nasa/field_nasa.dart';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
+import 'crop_suitability.dart';
 import 'field_language.dart';
 import 'parcel_observations.dart';
 
@@ -32,6 +33,7 @@ class FieldController extends ChangeNotifier {
   final SceneCatalog sentinel, landsat;
   final ClimateProvider climate;
   final RasterProcessor processor;
+  final CropSuitabilityClient? cropSuitabilityClient;
 
   FieldController({
     required this.parcels,
@@ -40,6 +42,7 @@ class FieldController extends ChangeNotifier {
     required this.landsat,
     required this.climate,
     required this.processor,
+    this.cropSuitabilityClient,
   });
 
   List<Parcel> saved = [];
@@ -47,6 +50,7 @@ class FieldController extends ChangeNotifier {
   List<GeoPoint> vertices = [];
   final List<List<GeoPoint>> _undo = [];
   final Map<String, ParcelObservations> _archive = {};
+  final _cropReviews = <String, ({String input, CropSuitability result})>{};
   List<Scene> scenes = [];
   Observation analysisVariable = Observation.rgb;
   bool showingWeather = false;
@@ -99,6 +103,14 @@ class FieldController extends ChangeNotifier {
       : observationsFor(selected!);
   List<RasterResult> get results => observations.rasters;
   ClimateSeries? get weather => observations.climate;
+  CropSuitability? get cropReview {
+    final parcel = selected;
+    if (parcel == null) return null;
+    final savedReview = _cropReviews[parcel.id];
+    return savedReview?.input == jsonEncode(cropSuitabilityInputs(parcel))
+        ? savedReview?.result
+        : null;
+  }
 
   void emit() {
     if (!_disposed) notifyListeners();
@@ -136,6 +148,8 @@ class FieldController extends ChangeNotifier {
           ParcelObservations.read(documents, parcel).then((entry) {
             _archive[parcel.id] = entry;
           }),
+        if (cropSuitabilityClient != null)
+          for (final parcel in saved) _openCropReview(parcel),
       ]);
     } catch (_) {
       message = t(
@@ -370,6 +384,7 @@ class FieldController extends ChangeNotifier {
       await parcels.deleteParcel(parcel.id);
       saved = saved.where((p) => p.id != parcel.id).toList();
       _archive.remove(parcel.id);
+      _cropReviews.remove(parcel.id);
       selected = null;
       vertices = [];
       _resetSelection();
@@ -641,6 +656,40 @@ class FieldController extends ChangeNotifier {
         pixel = await processor.sample(current, point);
       },
     );
+  }
+
+  Future<void> _openCropReview(Parcel parcel) async {
+    try {
+      final entry = await documents.readDocument(
+        'crop-suitability:${parcel.id}',
+      );
+      if (entry == null) return;
+      _cropReviews[parcel.id] = (
+        input: entry['input'] as String,
+        result: CropSuitability.fromJson(
+          entry['result'] as Map<String, dynamic>,
+        ),
+      );
+    } on Object {
+      // Ignore a malformed optional record when opening a field.
+      _cropReviews.remove(parcel.id);
+    }
+  }
+
+  Future<void> evaluateCrops() async {
+    final parcel = selected;
+    final client = cropSuitabilityClient;
+    if (parcel == null || client == null || editing || offline) return;
+    final inputs = cropSuitabilityInputs(parcel);
+    final inputKey = jsonEncode(inputs);
+    await run(t('Evaluating crops…', 'Evaluando cultivos…'), () async {
+      final review = await client.evaluate(inputs);
+      await documents.writeDocument('crop-suitability:${parcel.id}', {
+        'input': inputKey,
+        'result': review.data,
+      });
+      _cropReviews[parcel.id] = (input: inputKey, result: review);
+    }, network: true);
   }
 
   bool comparable(RasterResult a, RasterResult b) =>

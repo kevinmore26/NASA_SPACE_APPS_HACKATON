@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:field_core/field_core.dart';
+import 'package:field_shift/application/crop_suitability.dart';
 import 'package:field_shift/application/field_language.dart';
 import 'package:field_maps/field_maps.dart';
 import 'package:field_shift/app.dart';
@@ -13,13 +16,17 @@ import 'package:http/testing.dart';
 
 import 'support.dart';
 
-FieldController controller(MemoryStore store) => FieldController(
+FieldController controller(
+  MemoryStore store, {
+  CropSuitabilityClient? cropSuitabilityClient,
+}) => FieldController(
   parcels: store,
   documents: store,
   sentinel: EmptyCatalog(),
   landsat: EmptyCatalog(),
   climate: NoClimate(),
   processor: NoProcessor(),
+  cropSuitabilityClient: cropSuitabilityClient,
 )..base = 'none';
 
 void resize(WidgetTester tester, Size size) {
@@ -80,6 +87,78 @@ Future<void> openLocationMap(
 }
 
 void main() {
+  testWidgets('evaluates crops from the saved field and reopens them offline', (
+    tester,
+  ) async {
+    final store = MemoryStore();
+    final parcel = pilotParcel();
+    await store.saveParcel(parcel);
+    final endpoint = Uri.https('api.example.test', '/api/crops/suitability');
+    var calls = 0;
+    final httpClient = MockClient((request) async {
+      calls++;
+      expect(request.method, 'POST');
+      expect(request.url, endpoint);
+      final center = parcel.geometry.bounds.center;
+      expect(jsonDecode(request.body), {
+        'latitude': center.latitude,
+        'longitude': center.longitude,
+        'texture': 'sandyLoam',
+        'drainage': 'good',
+        'soilConductivity': 1.5,
+      });
+      return http.Response(
+        jsonEncode({
+          'schema': 1,
+          'status': 'conditional',
+          'period': {'start': '20150101', 'end': '20241231'},
+          'source': 'NASA POWER Daily API',
+          'catalog': 'FAO EcoCrop (OpenCLIM)',
+          'soilFactors': ['soil_texture'],
+          'crops': [
+            {
+              'name': 'Cowpea',
+              'scientificName': 'Vigna unguiculata',
+              'score': 86,
+            },
+          ],
+        }),
+        200,
+      );
+    });
+    addTearDown(httpClient.close);
+    final client = CropSuitabilityClient(httpClient, endpoint);
+    final model = controller(store, cropSuitabilityClient: client);
+    await model.initialize();
+    model.goTo(FieldPage.rotations);
+    await open(tester, model);
+    expect(calls, 0);
+    await press(tester, 'Evaluate crops');
+    expect(calls, 1);
+    expect(find.text('Vigna unguiculata'), findsOneWidget);
+    expect(
+      find.text('Review water availability for these options.'),
+      findsOneWidget,
+    );
+
+    final reopened = controller(store, cropSuitabilityClient: client);
+    await reopened.initialize();
+    reopened.offline = true;
+    reopened.goTo(FieldPage.rotations);
+    await open(tester, reopened);
+    expect(find.text('Vigna unguiculata'), findsOneWidget);
+    final updateButton = tester.widget<FilledButton>(
+      find.widgetWithText(FilledButton, 'Refresh results'),
+    );
+    expect(updateButton.onPressed, isNull);
+    expect(calls, 1);
+
+    await reopened.saveFarm(const FarmRecord());
+    await tester.pumpAndSettle();
+    expect(find.text('Vigna unguiculata'), findsNothing);
+    await tester.pumpWidget(const SizedBox.shrink());
+  });
+
   testWidgets('location centers an empty draft within twenty kilometers', (
     tester,
   ) async {

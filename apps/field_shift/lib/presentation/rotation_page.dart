@@ -3,6 +3,7 @@ import 'package:field_rotations/field_rotations.dart';
 import 'package:flutter/material.dart';
 
 import '../application/field_controller.dart';
+import 'crop_suitability_panel.dart';
 import 'field_strings.dart';
 import 'period_picker.dart';
 import 'rotation_form.dart';
@@ -89,6 +90,10 @@ class _RotationPageState extends State<RotationPage> {
               ),
             )
           else ...[
+            if (m.cropSuitabilityClient != null) ...[
+              CropSuitabilityPanel(model: m),
+              const SizedBox(height: 16),
+            ],
             Text(
               context.t(
                 'This pilot covers irrigated yellow field corn on the coast of Lambayeque, Peru.',
