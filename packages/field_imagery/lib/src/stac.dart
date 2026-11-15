@@ -16,15 +16,12 @@ class StacCatalog implements SceneCatalog {
     required this.collection,
     required this.provider,
   });
-  factory StacCatalog.sentinel(http.Client client, {Uri? endpoint}) =>
-      StacCatalog(
-        client: client,
-        endpoint:
-            endpoint ??
-            Uri.parse('https://earth-search.aws.element84.com/v1/search'),
-        collection: 'sentinel-2-l2a',
-        provider: 'ESA/Copernicus · Earth Search',
-      );
+  factory StacCatalog.sentinel(http.Client client) => StacCatalog(
+    client: client,
+    endpoint: Uri.parse('https://earth-search.aws.element84.com/v1/search'),
+    collection: 'sentinel-2-l2a',
+    provider: 'ESA/Copernicus · Earth Search',
+  );
   @override
   Future<List<Scene>> search({
     required GeoBounds bounds,

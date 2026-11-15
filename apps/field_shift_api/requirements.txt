@@ -1,6 +1,0 @@
-fastapi==0.141.1
-uvicorn==0.52.1
-rasterio==1.5.2
-numpy==2.5.4
-pillow==13.0.0
-certifi==2026.10.23

@@ -2,15 +2,6 @@ import 'package:field_core/field_core.dart';
 
 enum Observation { rgb, falseColor, swir, red, ndvi, ndmi, temperature }
 
-enum RasterQuality {
-  available('Disponible'),
-  limited('Limitado'),
-  unusable('Sin datos utilizables');
-
-  const RasterQuality(this.label);
-  final String label;
-}
-
 extension ObservationLabel on Observation {
   String get label => switch (this) {
     Observation.rgb => 'Foto del terreno',
@@ -89,39 +80,14 @@ class RasterResult {
   String get parcelId => data['parcelId'] as String;
   String get parcelFingerprint => data['parcelFingerprint'] as String;
   String get imagePath => data['imagePath'] as String;
-  String? get previewPath => data['imagePath'] as String?;
   String get numericPath => data['numericPath'] as String;
-
-  /// Older Windows workers decoded the UTF-8 separator as Windows-1252.
-  String get provider => (data['provider'] as String).replaceAll('Â·', '·');
-  String get product =>
-      data['collection'] as String? ?? 'Producto sin identificar';
-  List<String> get warnings =>
-      (data['warnings'] as List? ?? []).whereType<String>().toList();
+  String get provider => data['provider'] as String;
   Observation get observation =>
       Observation.values.byName(data['observation'] as String);
   DateTime get acquired => DateTime.parse(data['acquired'] as String);
   double get resolution => (data['resolution'] as num).toDouble();
   RasterStatistics get statistics =>
       RasterStatistics.fromJson(data['statistics'] as Map<String, dynamic>);
-
-  /// Screen-level criteria. The raster and its statistics retain schema V1.
-  RasterQuality get quality {
-    final s = statistics;
-    if (s.validPixels <= 0 ||
-        s.validPixels > s.totalPixels ||
-        !s.validPercent.isFinite ||
-        s.validPercent <= 0 ||
-        s.validPercent > 100 ||
-        s.mean?.isFinite != true) {
-      return RasterQuality.unusable;
-    }
-    if (s.validPixels < 9 || s.validPercent < 50 || warnings.isNotEmpty) {
-      return RasterQuality.limited;
-    }
-    return RasterQuality.available;
-  }
-
   GeoBounds get bounds {
     final b = data['bounds'] as List;
     return GeoBounds(

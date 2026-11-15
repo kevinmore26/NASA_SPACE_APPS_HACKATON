@@ -32,19 +32,6 @@ class GeoBounds {
   );
 }
 
-enum GeometryIssue {
-  tooFewPoints('Marca al menos tres puntos.'),
-  tooManyPoints('Máximo 500 puntos por terreno.'),
-  dateLineCrossing('No se admite cruzar el meridiano 180°.'),
-  overlappingEdges('Hay bordes superpuestos. Corrige los puntos.'),
-  duplicatePoints('Hay puntos repetidos.'),
-  intersectingEdges('Los bordes se cruzan. Corrige los puntos.'),
-  tooSmall('El terreno no tiene una superficie suficiente.');
-
-  const GeometryIssue(this.message);
-  final String message;
-}
-
 /// A simple ring without repeated closing point. Dateline crossings are rejected.
 class FieldGeometry {
   final List<GeoPoint> vertices;
@@ -53,14 +40,11 @@ class FieldGeometry {
     if (error != null) throw ArgumentError(error);
   }
   GeoBounds get bounds => GeoBounds.fromPoints(vertices);
-  static String? validate(List<GeoPoint> points) =>
-      validationIssue(points)?.message;
-
-  static GeometryIssue? validationIssue(List<GeoPoint> p) {
-    if (p.length < 3) return GeometryIssue.tooFewPoints;
-    if (p.length > 500) return GeometryIssue.tooManyPoints;
+  static String? validate(List<GeoPoint> p) {
+    if (p.length < 3) return 'Marca al menos tres puntos.';
+    if (p.length > 500) return 'Máximo 500 puntos por terreno.';
     if (GeoBounds.fromPoints(p).east - GeoBounds.fromPoints(p).west > 180) {
-      return GeometryIssue.dateLineCrossing;
+      return 'No se admite cruzar el meridiano 180°.';
     }
     for (var i = 0; i < p.length; i++) {
       final a = p[(i + p.length - 1) % p.length],
@@ -70,12 +54,12 @@ class FieldGeometry {
           (b.longitude - a.longitude) * (c.longitude - b.longitude) +
           (b.latitude - a.latitude) * (c.latitude - b.latitude);
       if (_cross(a, b, c).abs() < 1e-14 && dot < 0) {
-        return GeometryIssue.overlappingEdges;
+        return 'Hay bordes superpuestos. Corrige los puntos.';
       }
       for (var j = i + 1; j < p.length; j++) {
         if ((p[i].latitude - p[j].latitude).abs() < 1e-10 &&
             (p[i].longitude - p[j].longitude).abs() < 1e-10) {
-          return GeometryIssue.duplicatePoints;
+          return 'Hay puntos repetidos.';
         }
       }
     }
@@ -88,11 +72,11 @@ class FieldGeometry {
           p[j],
           p[(j + 1) % p.length],
         )) {
-          return GeometryIssue.intersectingEdges;
+          return 'Los bordes se cruzan. Corrige los puntos.';
         }
       }
     }
-    if (_area(p) < 0.1) return GeometryIssue.tooSmall;
+    if (_area(p) < 0.1) return 'El terreno no tiene una superficie suficiente.';
     return null;
   }
 

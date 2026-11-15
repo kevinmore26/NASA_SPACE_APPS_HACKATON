@@ -35,7 +35,7 @@ void main() {
       await tester.tap(find.text('1'));
       await tester.pump();
       expect(selected, 0);
-      await tester.tap(find.byTooltip('Zoom in'));
+      await tester.tap(find.byTooltip('Acercar mapa'));
       await tester.pumpAndSettle();
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(const SizedBox.shrink());

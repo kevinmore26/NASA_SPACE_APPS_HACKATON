@@ -4,8 +4,7 @@
 **/coverage/
 **/.flutter-plugins-dependencies
 **/flutter/ephemeral/
-/dist/
-/NASA_SPACE_APPS_HACKATON*.zip
+
 # Python
 **/__pycache__/
 **/.pytest_cache/

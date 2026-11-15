@@ -1,8 +1,5 @@
-import io
-import json
 import tempfile
 import unittest
-from contextlib import redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 import numpy as np
@@ -12,19 +9,6 @@ from rasterio.warp import transform
 import raster_worker as w
 
 class ScienceTests(unittest.TestCase):
-    def test_json_protocol_uses_utf8_with_windows_console_encoding(self):
-        payload = {'schema': 1, 'scene': {'provider': 'ESA/Copernicus · Earth Search'}}
-        stream = io.TextIOWrapper(
-            io.BytesIO(json.dumps(payload, ensure_ascii=False).encode('utf-8')),
-            encoding='cp1252',
-        )
-        output = io.StringIO()
-        with patch('sys.stdin', stream), patch.object(w, 'process', return_value=payload) as process:
-            with redirect_stdout(output):
-                w.main()
-        process.assert_called_once_with(payload)
-        self.assertEqual(json.loads(output.getvalue()), payload)
-
     def test_normalized_difference_zero_invalid_negative(self):
         a=np.array([[.6,0,np.nan,-.1,.4]],dtype='float32');b=np.array([[.2,0,.2,.2,.2]],dtype='float32')
         out=w.normalized_difference(a,b,np.array([[True,True,True,True,False]]))

@@ -1,19 +1,18 @@
-# Contratos públicos
+# Contratos públicos v1
 
 La aplicación compone servicios por constructor. Los paquetes exponen únicamente su biblioteca pública; no hay imports `src` entre paquetes. `tools/check_architecture.py` verifica imports y ciclos. `docs/evidence/architecture.json` registra el grafo real.
 
 | Paquete | Propiedad y contrato | Dependencias de dominio |
 | --- | --- | --- |
-| field_core | GeoPoint WGS84, GeoBounds, FieldGeometry, Parcel, FarmRecord, FarmPlanning, ParcelRepository, LocalDocuments | Ninguna |
+| field_core | GeoPoint WGS84, GeoBounds, FieldGeometry, Parcel, FarmRecord, ParcelRepository, LocalDocuments | Ninguna |
 | field_maps | FieldMap/Controller, MapTiles y MapRaster; renderizado/interacción, sin URLs de proveedores ni cálculos científicos | field_core |
 | field_imagery | SceneCatalog, Scene, Observation, RasterProcessor, RasterResult, RasterStatistics, PixelSample; adaptador STAC reutilizable y configuración Earth Search | field_core |
 | field_nasa | GibsLayer, NasaPower/ClimateProvider, ClimateSeries y catálogo Landsat USGS/NASA | field_core, field_imagery |
 | field_storage | LocalStore SQLite esquema 1; CachedTileClient con límite, deduplicación y offline | field_core |
 | field_compute | LocalRasterProcessor; proceso cancelable con protocolo JSON schema=1; no Flutter | field_core, field_imagery |
-| field_rotations | RotationEngine compara escenarios con el terreno y una revisión determinista de las condiciones del piloto | field_core |
-| app | FieldController, ParcelObservations, composición y vistas del escritorio | Bibliotecas públicas anteriores |
+| app | FieldController, composición, navegación, diálogo agrícola y panel de resultados | Bibliotecas públicas anteriores |
 
-Las estadísticas y muestras tienen tipos explícitos. Los documentos JSON conservan metadatos originales del proveedor y resultados versionados; no se fuerzan datos ausentes a cero. FarmPlanning se guarda como subdocumento opcional de la parcela y las filas V1 siguen usando el mismo contrato SQLite. El worker intercambia JSON por stdin/stdout y nunca recibe PNG de mapa para calcular índices. Windows es el adaptador implementado; otras plataformas necesitarán adaptar ejecución/persistencia, sin cambiar entidades ni interfaces científicas.
+Las estadísticas y muestras tienen tipos explícitos. Los documentos JSON conservan metadatos originales del proveedor y resultados versionados; no se fuerzan datos ausentes a cero. El worker intercambia JSON por stdin/stdout y nunca recibe PNG de mapa para calcular índices. Windows es el adaptador implementado; otras plataformas necesitarán adaptar ejecución/persistencia, sin cambiar entidades ni interfaces científicas.
 
 ## Ciencia reproducible
 

@@ -18,7 +18,7 @@ try {
     if ($null -eq $crtPath) { throw 'No se encontró el runtime redistribuible MSVC.' }
     Get-ChildItem -LiteralPath $crtPath.FullName -Filter '*.dll' | Copy-Item -Destination $releasePath -Force
     # Keep generated distributions versioned; never delete user data/installations.
-    $bundlePath = Join-Path $projectRoot 'dist/NASA_Field_Shift_Windows_0.2.2'
+    $bundlePath = Join-Path $projectRoot 'dist/NASA_Field_Shift_Windows_0.1.0'
     New-Item -ItemType Directory -Force -Path $bundlePath | Out-Null
     Get-ChildItem -LiteralPath $releasePath | Copy-Item -Destination $bundlePath -Recurse -Force
     Write-Output (Join-Path $bundlePath 'field_shift.exe')
