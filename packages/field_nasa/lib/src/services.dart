@@ -6,8 +6,7 @@ import 'package:http/http.dart' as http;
 
 class GibsLayer {
   static const id = 'MODIS_Terra_CorrectedReflectance_TrueColor';
-  static const attribution =
-      'NASA EOSDIS GIBS · MODIS Terra · RGB de visualización · 250 m';
+  static const attribution = 'NASA EOSDIS GIBS · MODIS Terra RGB · 250 m';
   static String template(DateTime date) =>
       'https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/$id/default/${date.toIso8601String().substring(0, 10)}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg';
 }
@@ -24,20 +23,30 @@ SceneCatalog landsatCatalog(http.Client client) => StacCatalog(
 class ClimateSeries {
   final Map<String, dynamic> data;
   ClimateSeries(this.data);
+
   Map<String, dynamic> get parameters =>
-      (data['properties'] as Map<String, dynamic>)['parameter']
-          as Map<String, dynamic>;
-  Map<String, dynamic> get units => data['parameters'] as Map<String, dynamic>;
-  List<String> get days =>
-      (parameters.values.first as Map<String, dynamic>).keys.toList()..sort();
-  double? value(String parameter, String day) {
-    final raw =
-        (parameters[parameter] as Map<String, dynamic>? ?? {})[day] as num?;
-    final fill =
-        (data['header'] as Map<String, dynamic>?)?['fill_value'] as num? ??
-        -999;
-    return raw == null || raw == fill ? null : raw.toDouble();
+      _object(_object(data['properties'])['parameter']);
+  Map<String, dynamic> get units => _object(data['parameters']);
+
+  String? unitFor(String parameter) {
+    final unit = _object(units[parameter])['units'];
+    return unit is String ? unit : null;
   }
+
+  List<String> get days => {
+    for (final series in parameters.values)
+      for (final day in _object(series).keys)
+        if (day.length == 8 && DateTime.tryParse(day) != null) day,
+  }.toList()..sort();
+
+  double? value(String parameter, String day) {
+    final raw = _object(parameters[parameter])[day];
+    final fill = _object(data['header'])['fill_value'] ?? -999;
+    return raw is num && raw.isFinite && raw != fill ? raw.toDouble() : null;
+  }
+
+  static Map<String, dynamic> _object(Object? value) =>
+      value is Map<String, dynamic> ? value : const {};
 }
 
 abstract interface class ClimateProvider {
@@ -74,6 +83,8 @@ class NasaPower implements ClimateProvider {
         'NASA POWER no disponible (HTTP ${response.statusCode}).',
       );
     }
-    return ClimateSeries(jsonDecode(response.body) as Map<String, dynamic>);
+    return ClimateSeries(
+      jsonDecode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>,
+    );
   }
 }

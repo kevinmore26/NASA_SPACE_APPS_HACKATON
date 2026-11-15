@@ -1,0 +1,93 @@
+{
+  "version": "0.2.1",
+  "host": "Linux",
+  "flutter": "3.50.0",
+  "dart": "3.14.0",
+  "testsPassed": {
+    "dartFlutter": {
+      "app": 9,
+      "field_core": 5,
+      "field_nasa": 4,
+      "field_imagery": 2,
+      "field_maps": 2,
+      "field_storage": 3,
+      "field_compute": 1,
+      "field_rotations": 3
+    },
+    "pythonRaster": 6
+  },
+  "staticAnalysis": {
+    "errors": 0,
+    "warnings": 0,
+    "materialDeprecationInfos": 20
+  },
+  "regressions": [
+    "English default and persisted Spanish; same map state on switch",
+    "direct February 2024 selection including leap day",
+    "daily weather rows expanded on wide and narrow windows; non-numeric entries",
+    "opening and copying raster details and crop sources",
+    "UTF-8 JSON under Windows-1252 console encoding"
+  ],
+  "providerVerification": {
+    "verificationUtc": "2026-11-15T00:16:29.016705Z",
+    "bbox": [
+      -76.18,
+      -13.75,
+      -76.12,
+      -13.69
+    ],
+    "sentinel": {
+      "scenes": 3,
+      "firstId": "S2C_18LUK_20250228_0_L2A",
+      "provider": "ESA/Copernicus · Earth Search",
+      "date": "2025-02-28T15:27:26.055Z"
+    },
+    "landsat": {
+      "scenes": 4,
+      "firstId": "LC09_L2SP_006070_20250226_02_T1",
+      "provider": "USGS/NASA · Planetary Computer",
+      "date": "2025-02-26T15:05:38.400506Z"
+    },
+    "power": {
+      "days": 7,
+      "units": {
+        "T2M": {
+          "units": "C",
+          "longname": "Temperature at 2 Meters"
+        },
+        "PRECTOTCORR": {
+          "units": "mm/day",
+          "longname": "Precipitation Corrected"
+        },
+        "RH2M": {
+          "units": "%",
+          "longname": "Relative Humidity at 2 Meters"
+        },
+        "ALLSKY_SFC_SW_DWN": {
+          "units": "MJ/m^2/day",
+          "longname": "All Sky Surface Shortwave Downward Irradiance"
+        }
+      },
+      "firstDay": "20250201"
+    },
+    "gibs": {
+      "url": "https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2025-02-28/GoogleMapsCompatible_Level9/9/275/147.jpg",
+      "status": 200,
+      "bytes": 10776,
+      "mime": "image/jpeg"
+    },
+    "status": "PASS"
+  },
+  "sentinelNdviWithWindowsConsoleEncoding": {
+    "status": "PASS",
+    "scene": "S2C_18LUK_20250228_0_L2A",
+    "provider": "ESA/Copernicus · Earth Search",
+    "validPixels": 727,
+    "coveragePercent": 99.72565157750343,
+    "resolution": 20.0
+  },
+  "nativeWindows": {
+    "status": "pending",
+    "buildMessage": "\"build windows\" only supported on Windows hosts."
+  }
+}

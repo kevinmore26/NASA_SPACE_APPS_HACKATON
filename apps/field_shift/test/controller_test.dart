@@ -1,4 +1,5 @@
 import 'package:field_core/field_core.dart';
+import 'package:field_imagery/field_imagery.dart';
 import 'package:field_shift/application/field_controller.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -47,6 +48,78 @@ void main() {
       await m.deleteSelected();
       expect(await store.listParcels(), isEmpty);
       m.dispose();
+    },
+  );
+
+  test(
+    'offline reopens V1 results and distinguishes usable coverage',
+    () async {
+      final store = MemoryStore();
+      final parcel = pilotParcel();
+      await store.saveParcel(parcel);
+      await store.writeDocument('preferences-v1', {
+        'schema': 1,
+        'offline': true,
+      });
+      await store.writeDocument(
+        'result:pilot:good',
+        rasterFixture(parcel, id: 'good', pixels: 95),
+      );
+      await store.writeDocument(
+        'result:pilot:limited',
+        rasterFixture(
+          parcel,
+          id: 'limited',
+          pixels: 20,
+          date: DateTime.utc(2025),
+        ),
+      );
+      await store.writeDocument(
+        'result:pilot:bad',
+        rasterFixture(
+          parcel,
+          id: 'bad',
+          pixels: 0,
+          date: DateTime.utc(2026, 2),
+        ),
+      );
+      await store.writeDocument('power:pilot', {
+        'geometry': {
+          'type': 'Point',
+          'coordinates': parcel.geometry.bounds.center.toJson(),
+        },
+        'properties': {
+          'parameter': {
+            'PRECTOTCORR': {'20260101': 1.2, '20260102': -999},
+          },
+        },
+        'parameters': {
+          'PRECTOTCORR': {'units': 'mm/day'},
+        },
+      });
+      final m = FieldController(
+        parcels: store,
+        documents: store,
+        sentinel: EmptyCatalog(),
+        landsat: EmptyCatalog(),
+        climate: NoClimate(),
+        processor: NoProcessor(),
+      );
+      addTearDown(m.dispose);
+      await m.initialize();
+      expect(m.offline, true);
+      expect(m.selected!.id, 'pilot');
+      expect(m.results.map((r) => r.quality), [
+        RasterQuality.limited,
+        RasterQuality.available,
+        RasterQuality.unusable,
+      ]);
+      expect(m.observations.latestUsable!.id, 'good');
+      m.openResult(m.results.first);
+      expect(m.result!.id, 'limited');
+      expect(m.comparable(m.results.last, m.results.first), false);
+      expect(m.weather!.value('PRECTOTCORR', '20260102'), isNull);
+      expect(m.weather!.unitFor('PRECTOTCORR'), 'mm/day');
     },
   );
   test(

@@ -4,6 +4,7 @@
 library;
 
 export 'src/field_core_base.dart';
+export 'src/farm_planning.dart';
 export 'src/geometry.dart';
 export 'src/parcel.dart';
 

@@ -1,6 +1,6 @@
 name: field_shift
-description: Visor agr?cola local con observaciones NASA y Copernicus.
-version: 0.1.0+1
+description: Aplicación agrícola local con observaciones NASA y Copernicus.
+version: 0.2.2+4
 publish_to: none
 resolution: workspace
 environment:
@@ -16,7 +16,9 @@ dependencies:
   field_imagery: any
   field_storage: any
   field_compute: any
+  field_rotations: any
   http: ^1.6.0
+  intl: any
   path_provider: ^2.1.6
   path: ^1.9.1
 dev_dependencies:
@@ -27,3 +29,11 @@ dev_dependencies:
   flutter_lints: ^6.0.0
 flutter:
   uses-material-design: true
+  assets:
+    - assets/fonts/OFL.txt
+    - assets/images/CREDITS.txt
+    - assets/images/punjab-fields.jpg
+  fonts:
+    - family: IBM Plex Sans
+      fonts:
+        - asset: assets/fonts/IBMPlexSans.ttf

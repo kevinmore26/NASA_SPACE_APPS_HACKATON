@@ -240,7 +240,8 @@ def sample(req):
         return {'values':[float(v) if np.isfinite(v) else None for v in values],'row':row,'column':col}
 
 def main():
-    req=json.load(sys.stdin)
+    # The desktop process sends UTF-8 JSON on all platforms.
+    req=json.load(sys.stdin.buffer)
     if req.get('schema')!=1: raise ValueError('Protocolo incompatible.')
     env=dict(GDAL_DISABLE_READDIR_ON_OPEN='EMPTY_DIR',CPL_VSIL_CURL_ALLOWED_EXTENSIONS='.tif,.TIF',GDAL_HTTP_TIMEOUT='35',GDAL_HTTP_MAX_RETRY='1',GDAL_CACHEMAX=64*1024*1024,VSI_CACHE=False)
     with rasterio.Env(**env):
